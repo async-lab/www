@@ -114380,6 +114380,33 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "40991a0d"
+    },
+    "node_modules/@lucide/vue/LICENSE": {
+      "ipo_ts": 1782566716759,
+      "edit_count": 1,
+      "last_lines": 43,
+      "last_ts": 1782566716759,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d85dfbd"
+    },
+    "node_modules/@lucide/vue/package.json": {
+      "ipo_ts": 1782566716848,
+      "edit_count": 1,
+      "last_lines": 61,
+      "last_ts": 1782566716848,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ca0d0ad0"
+    },
+    "node_modules/@lucide/vue/README.md": {
+      "ipo_ts": 1782566717032,
+      "edit_count": 1,
+      "last_lines": 87,
+      "last_ts": 1782566717032,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "90478b1e"
     }
   }
 }
