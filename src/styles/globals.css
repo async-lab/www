@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+  --color-elevated: #1a1a1a;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-text: #f9fafb;
+  --color-muted: #a3aab8;
+  --color-primary: #0066ff;
+  --color-primary-dark: #0052cc;
+  --color-primary-light: #3385ff;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+html.light {
+  color-scheme: light;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-elevated: #f1f5f9;
+  --color-border: rgba(15, 23, 42, 0.12);
+  --color-text: #0f172a;
+  --color-muted: #475569;
+  --color-primary: #005fee;
+  --color-primary-dark: #0045b8;
+  --color-primary-light: #2f7dff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Inter, "HarmonyOS Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(0, 102, 255, 0.35);
+  color: #ffffff;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+@layer components {
+  .lab-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    @apply border border-lab-border bg-white/[0.06] shadow-glow backdrop-blur-xl;
+  }
+
+  .light .glass-panel {
+    @apply bg-white/85 shadow-xl;
+  }
+
+  .tech-tag {
+    @apply inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 font-mono text-xs text-lab-text;
+  }
+
+  .light .tech-tag {
+    @apply border-slate-200 bg-slate-50 text-slate-700;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition:
+    opacity 260ms var(--ease-out-expo),
+    transform 260ms var(--ease-out-expo);
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.code-matrix {
+  mask-image: radial-gradient(circle at center, black 0%, black 48%, transparent 78%);
+}
+
+.scanline-overlay::before {
+  position: absolute;
+  inset: -40% 0;
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  animation: scan 7s linear infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

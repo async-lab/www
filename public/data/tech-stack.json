@@ -1,0 +1,22 @@
+[
+  {
+    "direction": "frontend",
+    "label": "前端开发",
+    "items": ["Vue", "Nuxt", "Vite", "TypeScript", "Tailwind CSS", "小程序"]
+  },
+  {
+    "direction": "backend",
+    "label": "后端开发",
+    "items": ["Node.js", "Java", "Python", "PostgreSQL", "Redis", "Docker"]
+  },
+  {
+    "direction": "mobile",
+    "label": "移动端开发",
+    "items": ["uni-app", "Flutter", "iOS", "Android", "Pinia"]
+  },
+  {
+    "direction": "embedded",
+    "label": "嵌入式开发",
+    "items": ["ARM", "STM32", "FreeRTOS", "MQTT", "IoT"]
+  }
+]
