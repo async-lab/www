@@ -2,11 +2,11 @@
   "name": "开发实验室",
   "englishName": "Development Lab",
   "slogan": "Code the Future",
-  "school": "待确认",
+  "school": "成都信息工程大学",
   "foundedAt": "待确认",
   "contact": {
     "email": "待确认",
-    "address": "待确认",
-    "github": "待确认"
+    "address": "成都信息工程大学双中心",
+    "github": "https://github.com/async-lab"
   }
 }

@@ -5,12 +5,7 @@ type Theme = "dark" | "light";
 const THEME_KEY = "lab-theme";
 
 function getPreferredTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
-
-  const stored = window.localStorage.getItem(THEME_KEY);
-  if (stored === "dark" || stored === "light") return stored;
-
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return "light";
 }
 
 function applyTheme(theme: Theme) {
@@ -24,7 +19,7 @@ function applyTheme(theme: Theme) {
 
 export const useAppStore = defineStore("app", {
   state: () => ({
-    theme: "dark" as Theme,
+    theme: "light" as Theme,
     menuOpen: false,
   }),
   actions: {

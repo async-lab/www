@@ -11,7 +11,7 @@ const isDark = computed(() => appStore.theme === "dark");
 <template>
   <button
     type="button"
-    class="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-xl border border-lab-border text-lab-text transition-colors duration-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
+    class="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-lab-border text-lab-text transition-colors duration-200 hover:border-lab-primary hover:text-lab-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
     :aria-label="isDark ? '切换到浅色模式' : '切换到深色模式'"
     @click="appStore.toggleTheme()"
   >

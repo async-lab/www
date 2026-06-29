@@ -11,8 +11,8 @@ withDefaults(
 
 <template>
   <article
-    class="rounded-2xl border border-lab-border bg-lab-surface/80 p-6 shadow-xl backdrop-blur-xl transition-colors duration-200"
-    :class="{ 'hover:border-lab-primary/50 hover:bg-lab-elevated': interactive }"
+    class="rounded-2xl border border-lab-border bg-lab-elevated p-8 transition-colors duration-200"
+    :class="{ 'hover:border-lab-primary/45': interactive }"
   >
     <slot />
   </article>

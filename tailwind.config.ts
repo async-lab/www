@@ -17,12 +17,6 @@ export default {
           primaryDark: "var(--color-primary-dark)",
           primaryLight: "var(--color-primary-light)",
         },
-        direction: {
-          frontend: "#00D4FF",
-          backend: "#00FF88",
-          mobile: "#FF00FF",
-          embedded: "#FFB800",
-        },
       },
       fontFamily: {
         display: ["Exo", "Inter", "SF Pro Display", "Microsoft YaHei", "sans-serif"],
@@ -30,8 +24,8 @@ export default {
         mono: ["Roboto Mono", "Fira Code", "JetBrains Mono", "monospace"],
       },
       boxShadow: {
-        glow: "0 0 40px rgba(0, 102, 255, 0.28)",
-        "glow-strong": "0 0 72px rgba(0, 102, 255, 0.42)",
+        glow: "0 16px 48px rgba(0, 102, 255, 0.14)",
+        "glow-strong": "0 24px 80px rgba(0, 102, 255, 0.16)",
       },
       keyframes: {
         caret: {

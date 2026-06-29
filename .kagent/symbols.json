@@ -20,12 +20,12 @@
     },
     ".codegraph/codegraph.db": {
       "ipo_ts": 1782565241961,
-      "edit_count": 7,
-      "last_lines": 1218,
-      "last_ts": 1782566714583,
+      "edit_count": 16,
+      "last_lines": 1340,
+      "last_ts": 1782740887070,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "6cd82047"
+      "last_content_hash": "40c1699e"
     },
     "docs/实验室官网项目文档.md": {
       "ipo_ts": 1782565274027,
@@ -38,12 +38,12 @@
     },
     ".codegraph/daemon.log": {
       "ipo_ts": 1782565353411,
-      "edit_count": 1,
-      "last_lines": 2,
-      "last_ts": 1782565353411,
+      "edit_count": 3,
+      "last_lines": 22,
+      "last_ts": 1782740981210,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "10a28e01"
+      "last_content_hash": "a2420a5b"
     },
     ".codegraph/codegraph.db-shm": {
       "ipo_ts": 1782565353683,
@@ -74,21 +74,21 @@
     },
     "index.html": {
       "ipo_ts": 1782565678029,
-      "edit_count": 1,
-      "last_lines": 29,
-      "last_ts": 1782565678029,
+      "edit_count": 2,
+      "last_lines": 23,
+      "last_ts": 1782740490370,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "7eee2de3"
+      "last_content_hash": "2a3cf25c"
     },
     "vite.config.ts": {
       "ipo_ts": 1782565678831,
-      "edit_count": 1,
-      "last_lines": 17,
-      "last_ts": 1782565678831,
+      "edit_count": 6,
+      "last_lines": 18,
+      "last_ts": 1782568203729,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "f50b285f"
+      "last_content_hash": "5e696367"
     },
     "tsconfig.json": {
       "ipo_ts": 1782565679664,
@@ -110,12 +110,12 @@
     },
     "tailwind.config.ts": {
       "ipo_ts": 1782565681260,
-      "edit_count": 1,
-      "last_lines": 53,
-      "last_ts": 1782565681260,
+      "edit_count": 2,
+      "last_lines": 47,
+      "last_ts": 1782740492616,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "d7150a1e"
+      "last_content_hash": "a7fb4d8d"
     },
     "src/vite-env.d.ts": {
       "ipo_ts": 1782565682636,
@@ -128,12 +128,12 @@
     },
     "src/main.ts": {
       "ipo_ts": 1782565683413,
-      "edit_count": 1,
-      "last_lines": 20,
-      "last_ts": 1782565683413,
+      "edit_count": 2,
+      "last_lines": 17,
+      "last_ts": 1782566717692,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "41594869"
+      "last_content_hash": "76473a4e"
     },
     "src/lib/gsap.ts": {
       "ipo_ts": 1782565684679,
@@ -155,30 +155,30 @@
     },
     "src/stores/app.ts": {
       "ipo_ts": 1782565687312,
-      "edit_count": 1,
-      "last_lines": 49,
-      "last_ts": 1782565687312,
+      "edit_count": 3,
+      "last_lines": 44,
+      "last_ts": 1782740579312,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "5b7bc9be"
+      "last_content_hash": "a1445416"
     },
     "src/styles/globals.css": {
       "ipo_ts": 1782565688659,
-      "edit_count": 1,
-      "last_lines": 129,
-      "last_ts": 1782565688659,
+      "edit_count": 3,
+      "last_lines": 104,
+      "last_ts": 1782740879699,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "9fa743b"
+      "last_content_hash": "402d7ae7"
     },
     ".codegraph/codegraph.db-wal": {
       "ipo_ts": 1782565690941,
-      "edit_count": 6,
-      "last_lines": 9836,
-      "last_ts": 1782566714472,
+      "edit_count": 15,
+      "last_lines": 10381,
+      "last_ts": 1782740887177,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "178705c3"
+      "last_content_hash": "9c2a08dd"
     },
     "src/App.vue": {
       "ipo_ts": 1782565755990,
@@ -191,57 +191,57 @@
     },
     "src/components/layout/SiteHeader.vue": {
       "ipo_ts": 1782565757400,
-      "edit_count": 2,
-      "last_lines": 98,
-      "last_ts": 1782566714079,
+      "edit_count": 5,
+      "last_lines": 115,
+      "last_ts": 1782740880514,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "c0ee6fe"
+      "last_content_hash": "b0144bb7"
     },
     "src/components/layout/SiteFooter.vue": {
       "ipo_ts": 1782565758206,
-      "edit_count": 2,
-      "last_lines": 46,
-      "last_ts": 1782566714187,
+      "edit_count": 8,
+      "last_lines": 47,
+      "last_ts": 1782740583752,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "c0c512f5"
+      "last_content_hash": "66aa3a30"
     },
     "src/components/shared/ThemeToggle.vue": {
       "ipo_ts": 1782565759597,
-      "edit_count": 2,
+      "edit_count": 3,
       "last_lines": 21,
-      "last_ts": 1782566713971,
+      "last_ts": 1782740582278,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "9b8b3969"
+      "last_content_hash": "519f92f6"
     },
     "src/components/shared/SectionTitle.vue": {
       "ipo_ts": 1782565760237,
-      "edit_count": 1,
+      "edit_count": 2,
       "last_lines": 29,
-      "last_ts": 1782565760237,
+      "last_ts": 1782740581546,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "8682731d"
+      "last_content_hash": "b103177d"
     },
     "src/components/ui/BaseButton.vue": {
       "ipo_ts": 1782565761616,
-      "edit_count": 2,
+      "edit_count": 3,
       "last_lines": 63,
-      "last_ts": 1782565877496,
+      "last_ts": 1782740580039,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "20d94758"
+      "last_content_hash": "c301c5a0"
     },
     "src/components/ui/BaseCard.vue": {
       "ipo_ts": 1782565762435,
-      "edit_count": 1,
+      "edit_count": 2,
       "last_lines": 19,
-      "last_ts": 1782565762435,
+      "last_ts": 1782740580770,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "f5bdc3d6"
+      "last_content_hash": "87922d8c"
     },
     "src/components/animations/ScrollReveal.vue": {
       "ipo_ts": 1782565763812,
@@ -254,57 +254,57 @@
     },
     "src/data/researchDirections.ts": {
       "ipo_ts": 1782565856672,
-      "edit_count": 2,
+      "edit_count": 3,
       "last_lines": 56,
-      "last_ts": 1782566713660,
+      "last_ts": 1782740493330,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "d947e17"
+      "last_content_hash": "618c5191"
     },
     "src/components/home/HeroSection.vue": {
       "ipo_ts": 1782565857975,
-      "edit_count": 2,
-      "last_lines": 161,
-      "last_ts": 1782566714305,
+      "edit_count": 13,
+      "last_lines": 144,
+      "last_ts": 1782740628107,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "1a02fdb4"
+      "last_content_hash": "94ab14dd"
     },
     "src/components/home/ResearchDirections.vue": {
       "ipo_ts": 1782565858716,
-      "edit_count": 2,
-      "last_lines": 147,
-      "last_ts": 1782565878307,
+      "edit_count": 5,
+      "last_lines": 140,
+      "last_ts": 1782740881312,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "6a628280"
+      "last_content_hash": "a7ebb109"
     },
     "src/pages/Home.vue": {
       "ipo_ts": 1782565860065,
-      "edit_count": 2,
-      "last_lines": 80,
-      "last_ts": 1782566713765,
+      "edit_count": 4,
+      "last_lines": 79,
+      "last_ts": 1782740882168,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2d540e2a"
+      "last_content_hash": "c196ae5f"
     },
     "src/pages/About.vue": {
       "ipo_ts": 1782565963605,
-      "edit_count": 1,
-      "last_lines": 177,
-      "last_ts": 1782565963605,
+      "edit_count": 4,
+      "last_lines": 175,
+      "last_ts": 1782740882990,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "e5141eaf"
+      "last_content_hash": "484d6450"
     },
     "src/pages/Join.vue": {
       "ipo_ts": 1782565964403,
-      "edit_count": 2,
-      "last_lines": 189,
-      "last_ts": 1782566713870,
+      "edit_count": 5,
+      "last_lines": 186,
+      "last_ts": 1782740883785,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "be054b55"
+      "last_content_hash": "352f1149"
     },
     ".gitignore": {
       "ipo_ts": 1782565990536,
@@ -317,21 +317,21 @@
     },
     "README.md": {
       "ipo_ts": 1782565991370,
-      "edit_count": 1,
-      "last_lines": 60,
-      "last_ts": 1782565991370,
+      "edit_count": 2,
+      "last_lines": 62,
+      "last_ts": 1782566717860,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "ad7d594f"
+      "last_content_hash": "ea3b8ec5"
     },
     "public/data/site.json": {
       "ipo_ts": 1782565992726,
-      "edit_count": 1,
+      "edit_count": 4,
       "last_lines": 12,
-      "last_ts": 1782565992726,
+      "last_ts": 1782569078192,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "56685e72"
+      "last_content_hash": "21e64f2f"
     },
     "public/data/tech-stack.json": {
       "ipo_ts": 1782565993450,
@@ -11825,15 +11825,6 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "560c4bef"
-    },
-    "node_modules/lucide-vue-next/LICENSE": {
-      "ipo_ts": 1782566084688,
-      "edit_count": 1,
-      "last_lines": 15,
-      "last_ts": 1782566084688,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "eb6d5f1f"
     },
     "node_modules/memoize-one/src/memoize-one.ts": {
       "ipo_ts": 1782566084713,
@@ -114407,6 +114398,213 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "90478b1e"
+    },
+    "node_modules/.vue-global-types/vue_3.5_0_0_0.d.ts": {
+      "ipo_ts": 1782566717942,
+      "edit_count": 1,
+      "last_lines": 118,
+      "last_ts": 1782566717942,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "48907ec4"
+    },
+    "dist/data/site.json": {
+      "ipo_ts": 1782566718023,
+      "edit_count": 2,
+      "last_lines": 12,
+      "last_ts": 1782740910162,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "21e64f2f"
+    },
+    "dist/data/tech-stack.json": {
+      "ipo_ts": 1782566718108,
+      "edit_count": 1,
+      "last_lines": 22,
+      "last_ts": 1782566718108,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9e2ffdf7"
+    },
+    "dist/fonts/.gitkeep": {
+      "ipo_ts": 1782566718191,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718191,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a"
+    },
+    "dist/images/hero/.gitkeep": {
+      "ipo_ts": 1782566718269,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718269,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a"
+    },
+    "dist/images/news/.gitkeep": {
+      "ipo_ts": 1782566718349,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718349,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a"
+    },
+    "dist/images/projects/.gitkeep": {
+      "ipo_ts": 1782566718421,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718421,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a"
+    },
+    "dist/images/team/.gitkeep": {
+      "ipo_ts": 1782566718498,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718498,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a"
+    },
+    "dist/assets/About-DMKrq1tW.js": {
+      "ipo_ts": 1782566718574,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718574,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "66267d1b"
+    },
+    "dist/assets/BaseButton.vue_vue_type_script_setup_true_lang-_OeHbSfV.js": {
+      "ipo_ts": 1782566718648,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718648,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3074f025"
+    },
+    "dist/assets/BaseCard.vue_vue_type_script_setup_true_lang-CjHZ4xPB.js": {
+      "ipo_ts": 1782566718727,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1782566718727,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7431d705"
+    },
+    "dist/assets/Home-BvXsbAjZ.js": {
+      "ipo_ts": 1782566718804,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1782566718804,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2a8c2266"
+    },
+    "dist/assets/Join-DZ8ANK0v.js": {
+      "ipo_ts": 1782566718888,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1782566718888,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7be9ea64"
+    },
+    "dist/assets/index-He1Q26m-.css": {
+      "ipo_ts": 1782566718961,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782566718961,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4984c5e"
+    },
+    "dist/assets/index-Znk8FjYT.js": {
+      "ipo_ts": 1782566719081,
+      "edit_count": 1,
+      "last_lines": 138,
+      "last_ts": 1782566719081,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "6cd2b8a2"
+    },
+    "dist/index.html": {
+      "ipo_ts": 1782566719155,
+      "edit_count": 2,
+      "last_lines": 24,
+      "last_ts": 1782740910943,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "aac583c"
+    },
+    "dist/assets/About-BNWkOMwI.js": {
+      "ipo_ts": 1782740910370,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782740910370,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "347511ac"
+    },
+    "dist/assets/BaseButton.vue_vue_type_script_setup_true_lang-D6ibXyyn.js": {
+      "ipo_ts": 1782740910470,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782740910470,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "dd52b514"
+    },
+    "dist/assets/BaseCard.vue_vue_type_script_setup_true_lang-DZFw2xAu.js": {
+      "ipo_ts": 1782740910561,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1782740910561,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ad92948b"
+    },
+    "dist/assets/Home-CzkE6ksg.js": {
+      "ipo_ts": 1782740910643,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1782740910643,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "66482228"
+    },
+    "dist/assets/Join-COim3eb9.js": {
+      "ipo_ts": 1782740910714,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1782740910714,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "16dddb03"
+    },
+    "dist/assets/index-5zCRq3Ac.js": {
+      "ipo_ts": 1782740910787,
+      "edit_count": 1,
+      "last_lines": 128,
+      "last_ts": 1782740910787,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "28bbb20e"
+    },
+    "dist/assets/index-Dm0SOH_v.css": {
+      "ipo_ts": 1782740910860,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1782740910860,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "695ca9d"
     }
   }
 }

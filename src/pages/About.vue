@@ -67,8 +67,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div ref="page" class="overflow-hidden bg-lab-bg pt-28">
-    <section class="lab-container py-20">
+  <div ref="page" class="overflow-hidden bg-white pt-32">
+    <section class="lab-container py-24">
       <ScrollReveal>
         <SectionTitle
           eyebrow="About"
@@ -78,34 +78,34 @@ onUnmounted(() => {
       </ScrollReveal>
     </section>
 
-    <section class="history-scroll relative border-y border-lab-border bg-lab-surface py-20">
+    <section class="history-scroll relative border-y border-lab-border bg-lab-surface py-24">
       <div class="lab-container">
-        <div class="mb-10 flex items-end justify-between gap-6">
+        <div class="mb-12 flex items-end justify-between gap-8">
           <div>
             <p class="font-mono text-xs uppercase text-lab-primary">Timeline</p>
-            <h2 class="mt-3 font-display text-3xl font-semibold md:text-5xl">实验室发展路径</h2>
+            <h2 class="mt-4 font-display text-3xl font-semibold md:text-5xl">实验室发展路径</h2>
           </div>
-          <p class="hidden max-w-sm text-sm leading-7 text-lab-muted md:block">
+          <p class="hidden max-w-sm text-sm leading-8 text-lab-muted md:block">
             桌面端会在本段固定滚动并横向推进，移动端保持自然列表。
           </p>
         </div>
       </div>
 
-      <div ref="timelineTrack" class="flex gap-5 px-4 md:w-max md:px-[max(1rem,calc((100vw-80rem)/2+1.5rem))]">
+      <div ref="timelineTrack" class="flex gap-8 px-4 md:w-max md:px-[max(1rem,calc((100vw-80rem)/2+1.5rem))]">
         <article
           v-for="milestone in milestones"
           :key="milestone.title"
-          class="min-h-72 w-full shrink-0 rounded-3xl border border-lab-border bg-lab-bg p-6 shadow-xl md:w-[430px] md:p-8"
+          class="min-h-72 w-full shrink-0 rounded-3xl border border-lab-border bg-white p-8 md:w-[432px]"
         >
           <p class="font-mono text-sm text-lab-primary">{{ milestone.year }}</p>
           <h3 class="mt-6 text-2xl font-semibold text-lab-text">{{ milestone.title }}</h3>
-          <p class="mt-4 text-sm leading-7 text-lab-muted">{{ milestone.description }}</p>
-          <div class="mt-8 h-px w-full bg-gradient-to-r from-lab-primary via-direction-frontend to-transparent" />
+          <p class="mt-4 text-sm leading-8 text-lab-muted">{{ milestone.description }}</p>
+          <div class="mt-8 h-px w-full bg-lab-border" />
         </article>
       </div>
     </section>
 
-    <section class="lab-container py-24">
+    <section class="lab-container py-32">
       <ScrollReveal>
         <SectionTitle
           eyebrow="Direction Details"
@@ -114,29 +114,27 @@ onUnmounted(() => {
         />
       </ScrollReveal>
 
-      <div class="mt-12 grid gap-5 lg:grid-cols-2">
+      <div class="mt-16 grid gap-8 lg:grid-cols-2">
         <ScrollReveal v-for="direction in researchDirections" :key="direction.id">
           <BaseCard interactive class="h-full">
-            <div class="flex items-start gap-5">
+            <div class="flex items-start gap-8">
               <div
-                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl border bg-white/[0.05]"
-                :style="{ borderColor: `${direction.color}66`, color: direction.color }"
+                class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl border border-lab-border bg-lab-surface text-lab-primary"
               >
                 <component :is="direction.icon" class="h-7 w-7" aria-hidden="true" />
               </div>
               <div>
                 <p class="font-mono text-xs uppercase text-lab-muted">{{ direction.subtitle }}</p>
                 <h3 class="mt-2 text-2xl font-semibold text-lab-text">{{ direction.title }}</h3>
-                <p class="mt-3 text-sm leading-7 text-lab-muted">{{ direction.summary }}</p>
+                <p class="mt-4 text-sm leading-8 text-lab-muted">{{ direction.summary }}</p>
               </div>
             </div>
 
-            <div class="mt-7 flex flex-wrap gap-2">
+            <div class="mt-8 flex flex-wrap gap-2">
               <span
                 v-for="topic in direction.topics"
                 :key="topic"
                 class="tech-tag"
-                :style="{ borderColor: `${direction.color}55` }"
               >
                 {{ topic }}
               </span>
@@ -146,9 +144,9 @@ onUnmounted(() => {
       </div>
     </section>
 
-    <section class="bg-lab-surface py-24">
+    <section class="bg-lab-surface py-32">
       <div class="lab-container">
-        <div class="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+        <div class="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-center">
           <ScrollReveal>
             <SectionTitle
               eyebrow="Culture"
@@ -157,16 +155,16 @@ onUnmounted(() => {
             />
           </ScrollReveal>
           <ScrollReveal>
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div class="rounded-3xl border border-lab-border bg-lab-bg p-6">
+            <div class="grid gap-8 sm:grid-cols-2">
+              <div class="rounded-3xl border border-lab-border bg-white p-8">
                 <p class="font-mono text-xs uppercase text-lab-primary">Create</p>
-                <h3 class="mt-3 text-xl font-semibold">把想法做成作品</h3>
-                <p class="mt-3 text-sm leading-7 text-lab-muted">从页面、服务到设备接入，强调真实可演示、可迭代的结果。</p>
+                <h3 class="mt-4 text-xl font-semibold">把想法做成作品</h3>
+                <p class="mt-4 text-sm leading-8 text-lab-muted">从页面、服务到设备接入，强调真实可演示、可迭代的结果。</p>
               </div>
-              <div class="rounded-3xl border border-lab-border bg-lab-bg p-6">
+              <div class="rounded-3xl border border-lab-border bg-white p-8">
                 <p class="font-mono text-xs uppercase text-lab-primary">Improve</p>
-                <h3 class="mt-3 text-xl font-semibold">把作品做得更好</h3>
-                <p class="mt-3 text-sm leading-7 text-lab-muted">关注性能、体验、可访问性和维护成本，让项目能长期生长。</p>
+                <h3 class="mt-4 text-xl font-semibold">把作品做得更好</h3>
+                <p class="mt-4 text-sm leading-8 text-lab-muted">关注性能、体验、可访问性和维护成本，让项目能长期生长。</p>
               </div>
             </div>
           </ScrollReveal>

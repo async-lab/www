@@ -11,7 +11,8 @@ export default defineConfig({
     },
   },
   server: {
+    allowedHosts: ["127.0.0.1", "localhost", "192.168.1.100", "test.glqcatai.asia"],
     host: "0.0.0.0",
-    port: 5173,
+    port: 2778,
   },
 });

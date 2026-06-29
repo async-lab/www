@@ -3,19 +3,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { computed } from "vue";
 
 const buttonClass = cva(
-  "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary focus-visible:ring-offset-2 focus-visible:ring-offset-lab-bg disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary focus-visible:ring-offset-2 focus-visible:ring-offset-lab-bg disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        primary: "bg-lab-primary text-white shadow-glow hover:bg-lab-primaryLight",
+        primary: "bg-lab-primary text-white hover:bg-lab-primaryLight",
         secondary:
-          "border border-lab-primary/50 bg-lab-primary/10 text-lab-text hover:border-lab-primary hover:bg-lab-primary/20",
-        ghost: "text-lab-text hover:bg-white/10",
+          "border border-lab-border bg-white text-lab-text hover:border-lab-primary hover:text-lab-primary",
+        ghost: "text-lab-text hover:text-lab-primary",
       },
       size: {
-        sm: "min-h-9 px-4 text-sm",
-        md: "min-h-11 px-5 text-sm",
-        lg: "min-h-12 px-6 text-base",
+        sm: "min-h-10 px-4 text-sm",
+        md: "min-h-12 px-6 text-sm",
+        lg: "min-h-14 px-8 text-base",
       },
     },
     defaultVariants: {

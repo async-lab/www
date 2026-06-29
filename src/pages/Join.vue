@@ -50,10 +50,9 @@ const faqs = [
 </script>
 
 <template>
-  <div class="bg-lab-bg pt-28">
-    <section class="relative overflow-hidden py-20">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(0,255,136,0.14),transparent_32%),radial-gradient(circle_at_75%_20%,rgba(0,102,255,0.2),transparent_34%)]" />
-      <div class="lab-container relative">
+  <div class="bg-white pt-32">
+    <section class="py-24">
+      <div class="lab-container">
         <ScrollReveal>
           <SectionTitle
             eyebrow="Join Us"
@@ -69,7 +68,7 @@ const faqs = [
       </div>
     </section>
 
-    <section class="lab-container py-16">
+    <section class="lab-container py-24">
       <ScrollReveal>
         <SectionTitle
           eyebrow="Recruiting Tracks"
@@ -78,39 +77,37 @@ const faqs = [
         />
       </ScrollReveal>
 
-      <div class="mt-12 grid gap-5 lg:grid-cols-2">
+      <div class="mt-16 grid gap-8 lg:grid-cols-2">
         <ScrollReveal v-for="direction in researchDirections" :key="direction.id">
           <BaseCard interactive class="h-full">
-            <div class="flex items-start justify-between gap-5">
+            <div class="flex items-start justify-between gap-8">
               <div>
                 <p class="font-mono text-xs uppercase text-lab-muted">{{ direction.subtitle }}</p>
                 <h3 class="mt-2 text-2xl font-semibold">{{ direction.title }}</h3>
               </div>
               <div
-                class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border bg-white/[0.05]"
-                :style="{ borderColor: `${direction.color}66`, color: direction.color }"
+                class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-lab-border bg-lab-surface text-lab-primary"
               >
                 <component :is="direction.icon" class="h-6 w-6" aria-hidden="true" />
               </div>
             </div>
 
-            <div class="mt-7 grid gap-5 sm:grid-cols-2">
+            <div class="mt-8 grid gap-8 sm:grid-cols-2">
               <div>
                 <h4 class="text-sm font-semibold">技能要求</h4>
-                <div class="mt-3 flex flex-wrap gap-2">
+                <div class="mt-4 flex flex-wrap gap-2">
                   <span
-                    v-for="stack in direction.stacks"
-                    :key="stack"
-                    class="tech-tag"
-                    :style="{ borderColor: `${direction.color}55` }"
-                  >
+                  v-for="stack in direction.stacks"
+                  :key="stack"
+                  class="tech-tag"
+                >
                     {{ stack }}
                   </span>
                 </div>
               </div>
               <div>
                 <h4 class="text-sm font-semibold">培养目标</h4>
-                <p class="mt-3 text-sm leading-7 text-lab-muted">{{ direction.summary }}</p>
+                <p class="mt-4 text-sm leading-8 text-lab-muted">{{ direction.summary }}</p>
               </div>
             </div>
           </BaseCard>
@@ -118,7 +115,7 @@ const faqs = [
       </div>
     </section>
 
-    <section class="bg-lab-surface py-24">
+    <section class="bg-lab-surface py-32">
       <div class="lab-container">
         <ScrollReveal>
           <SectionTitle
@@ -129,23 +126,23 @@ const faqs = [
           />
         </ScrollReveal>
 
-        <div class="mt-14 grid gap-5 md:grid-cols-4">
+        <div class="mt-16 grid gap-8 md:grid-cols-4">
           <ScrollReveal v-for="(step, index) in steps" :key="step.title">
-            <div class="relative h-full rounded-3xl border border-lab-border bg-lab-bg p-6">
-              <div class="mb-6 flex items-center justify-between">
+            <div class="relative h-full rounded-3xl border border-lab-border bg-white p-8">
+              <div class="mb-8 flex items-center justify-between">
                 <span class="font-mono text-xs text-lab-primary">0{{ index + 1 }}</span>
                 <component :is="step.icon" class="h-6 w-6 text-lab-primary" aria-hidden="true" />
               </div>
               <h3 class="text-xl font-semibold">{{ step.title }}</h3>
-              <p class="mt-4 text-sm leading-7 text-lab-muted">{{ step.description }}</p>
+              <p class="mt-4 text-sm leading-8 text-lab-muted">{{ step.description }}</p>
             </div>
           </ScrollReveal>
         </div>
       </div>
     </section>
 
-    <section class="lab-container py-24">
-      <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+    <section class="lab-container py-32">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <ScrollReveal>
           <SectionTitle
             eyebrow="FAQ"
@@ -154,15 +151,15 @@ const faqs = [
           />
         </ScrollReveal>
 
-        <div class="grid gap-3">
+        <div class="grid gap-4">
           <div
             v-for="(faq, index) in faqs"
             :key="faq.question"
-            class="rounded-2xl border border-lab-border bg-lab-surface"
+            class="rounded-2xl border border-lab-border bg-white"
           >
             <button
               type="button"
-              class="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-lab-text focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
+              class="flex w-full cursor-pointer items-center justify-between gap-4 px-6 py-6 text-left font-semibold text-lab-text focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
               :aria-expanded="openFaq === index"
               :aria-controls="`faq-panel-${index}`"
               @click="openFaq = openFaq === index ? -1 : index"
@@ -177,7 +174,7 @@ const faqs = [
             <div
               v-show="openFaq === index"
               :id="`faq-panel-${index}`"
-              class="px-5 pb-5 text-sm leading-7 text-lab-muted"
+              class="px-6 pb-6 text-sm leading-8 text-lab-muted"
             >
               {{ faq.answer }}
             </div>
