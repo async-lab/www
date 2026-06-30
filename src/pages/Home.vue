@@ -35,23 +35,33 @@ const values = [
 const milestones = [
   {
     year: "阶段 01",
-    title: "实验室定位确认",
-    description: "明确全栈开发实验室方向，覆盖前端、后端、移动端、嵌入式四条技术线。",
+    title: "IOTU创立",
+    description: "前身成立，软件开发的起点",
   },
   {
     year: "阶段 02",
-    title: "培养路径建设",
-    description: "形成从基础训练、专题研讨到项目实战的连续培养节奏。",
+    title: "技术方向拓展",
+    description: "前端 / 后端(Java/Go) / 移动端(Android) / 嵌入式",
   },
   {
     year: "阶段 03",
-    title: "工程项目沉淀",
-    description: "通过真实项目积累组件库、服务端模板、跨端实践和硬件接入经验。",
+    title: "培养路径建设",
+    description: "新生根据自己的兴趣自幼学习",
   },
   {
     year: "阶段 04",
-    title: "成果展示上线",
-    description: "接入成员、项目、新闻和成果数据，让官网成为实验室长期展示窗口。",
+    title: "工程实践沉淀",
+    description: "工程实践沉淀",
+  },
+  {
+    year: "阶段 05",
+    title: "更名 · 理念升级",
+    description: "2021年Asynchronous Lab 正式启用，异步成长理念",
+  },
+  {
+    year: "阶段 06",
+    title: "持续发展 · 传承",
+    description: "开放平台，助力每届同学找到所爱",
   },
 ];
 
@@ -90,24 +100,24 @@ onUnmounted(() => {
 <template>
   <div ref="page">
     <HeroSection />
-    <ResearchDirections />
-
+    
     <section id="about" class="lab-container scroll-mt-28 py-24">
       <ScrollReveal>
         <SectionTitle
-          eyebrow="About"
-          title="把全栈能力拆成清楚的方向，再用项目把它们连接起来"
-          description="实验室官网把定位、研究方向、发展路径和加入方式收在同一条浏览动线上，减少跳转，让第一次访问的人能连续理解我们在做什么。"
+        eyebrow="About"
+        title="把软件开发拆成清楚的方向，再用项目把它们连接起来"
+        description="实验室官网把定位、研究方向、发展路径和加入方式收在同一条浏览动线上，减少跳转，让第一次访问的人能连续理解我们在做什么。"
         />
       </ScrollReveal>
     </section>
+    <ResearchDirections />
 
     <section class="history-scroll relative border-y border-lab-border bg-lab-surface py-24">
       <div class="lab-container">
         <div class="mb-12 flex items-end justify-between gap-8">
           <div>
             <p class="font-mono text-xs uppercase text-lab-primary">Timeline</p>
-            <h2 class="mt-4 font-display text-3xl font-semibold md:text-5xl">实验室发展路径</h2>
+            <h2 class="mt-4 font-display text-3xl font-semibold md:text-5xl">实验室展路径</h2>
           </div>
           <p class="hidden max-w-sm text-sm leading-8 text-lab-muted md:block">
             桌面端会在本段固定滚动并横向推进，移动端保持自然列表。

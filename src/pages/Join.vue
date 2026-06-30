@@ -56,7 +56,7 @@ const faqs = [
         <ScrollReveal>
           <SectionTitle
             eyebrow="Join Us"
-            title="加入全栈开发实验室"
+            title="加入异步开发实验室"
             description="这里先按文档搭好招生信息、申请流程和 FAQ。具体人数、邮箱、地点确认后，可以替换占位内容。"
           />
           <div class="mt-9">

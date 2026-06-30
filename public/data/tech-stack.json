@@ -2,12 +2,12 @@
   {
     "direction": "frontend",
     "label": "前端开发",
-    "items": ["Vue", "Nuxt", "Vite", "TypeScript", "Tailwind CSS", "小程序"]
+    "items": ["HTML", "CSS", "JavaScript", "Vue.js", "React"]
   },
   {
     "direction": "backend",
     "label": "后端开发",
-    "items": ["Node.js", "Java", "Python", "PostgreSQL", "Redis", "Docker"]
+    "items": ["Node.js", "Java","Golang"]
   },
   {
     "direction": "mobile",
