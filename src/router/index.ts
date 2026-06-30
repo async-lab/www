@@ -11,11 +11,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: "/about",
-    name: "about",
-    component: () => import("@/pages/About.vue"),
-    meta: {
-      title: "关于我们",
-    },
+    redirect: "/#about",
   },
   {
     path: "/join",

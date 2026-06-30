@@ -65,6 +65,16 @@ button {
   min-height: 100vh;
 }
 
+#smooth-wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#smooth-content {
+  min-height: 100vh;
+  will-change: transform;
+}
+
 @layer components {
   .lab-container {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;

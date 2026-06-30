@@ -7,7 +7,7 @@ import { useAppStore } from "@/stores/app";
 
 const navItems = [
   { label: "首页", to: "/" },
-  { label: "关于我们", to: "/about" },
+  { label: "关于我们", to: "/#about" },
   { label: "加入我们", to: "/join" },
 ];
 
@@ -73,7 +73,7 @@ watch(
           :key="item.to"
           :to="item.to"
           class="rounded-full px-4 py-2 text-sm font-medium text-lab-muted transition-colors duration-200 hover:text-lab-text focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
-          :class="{ 'text-lab-text': route.path === item.to }"
+          :class="{ 'text-lab-text': route.fullPath === item.to }"
         >
           {{ item.label }}
         </RouterLink>
@@ -105,7 +105,7 @@ watch(
           :key="item.to"
           :to="item.to"
           class="block rounded-xl px-4 py-4 text-sm font-medium text-lab-muted transition-colors duration-200 hover:text-lab-text focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
-          :class="{ 'text-lab-text': route.path === item.to }"
+          :class="{ 'text-lab-text': route.fullPath === item.to }"
         >
           {{ item.label }}
         </RouterLink>

@@ -130,7 +130,7 @@ onUnmounted(() => {
         </p>
 
         <div class="mt-12 flex flex-col gap-4 sm:flex-row">
-          <BaseButton as="RouterLink" to="/about" size="lg">
+          <BaseButton as="RouterLink" to="/#about" size="lg">
             了解实验室
             <ArrowRight class="h-4 w-4" aria-hidden="true" />
           </BaseButton>

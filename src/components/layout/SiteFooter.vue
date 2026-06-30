@@ -29,7 +29,7 @@ import { contact } from "../../../public/data/site.json";
         <h2 class="mb-4 text-sm font-semibold">站点导航</h2>
         <div class="grid gap-2 text-sm text-lab-muted">
           <RouterLink class="transition-colors hover:text-lab-text" to="/">首页</RouterLink>
-          <RouterLink class="transition-colors hover:text-lab-text" to="/about">关于我们</RouterLink>
+          <RouterLink class="transition-colors hover:text-lab-text" to="/#about">关于我们</RouterLink>
           <RouterLink class="transition-colors hover:text-lab-text" to="/join">加入我们</RouterLink>
         </div>
       </div>
