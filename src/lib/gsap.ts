@@ -21,16 +21,20 @@ export function setupScrollSmoother() {
   if (typeof window === "undefined") return undefined;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduceMotion) return undefined;
+  const isCompactViewport = window.matchMedia("(max-width: 767px)").matches;
+  if (reduceMotion || isCompactViewport) {
+    document.documentElement.classList.remove("has-smooth-scroll");
+    return undefined;
+  }
 
   smoother?.kill();
   smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    smooth: 1,
-    smoothTouch: 0.12,
-    effects: true,
+    smooth: 0.82,
+    smoothTouch: 0,
   });
+  document.documentElement.classList.add("has-smooth-scroll");
 
   return smoother;
 }
@@ -42,6 +46,9 @@ export function getScrollSmoother() {
 export function killScrollSmoother() {
   smoother?.kill();
   smoother = undefined;
+  if (typeof document !== "undefined") {
+    document.documentElement.classList.remove("has-smooth-scroll");
+  }
 }
 
 export { gsap, ScrollSmoother, ScrollTrigger };

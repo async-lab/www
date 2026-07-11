@@ -72,6 +72,9 @@ button {
 
 #smooth-content {
   min-height: 100vh;
+}
+
+html.has-smooth-scroll #smooth-content {
   will-change: transform;
 }
 

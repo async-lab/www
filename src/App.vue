@@ -13,6 +13,7 @@ const route = useRoute();
 async function syncScrollWithRoute() {
   await nextTick();
   const smoother = getScrollSmoother();
+  ScrollTrigger.refresh();
 
   if (route.hash) {
     const target = document.querySelector(route.hash);
@@ -21,10 +22,9 @@ async function syncScrollWithRoute() {
       if (!smoother) target.scrollIntoView({ block: "start" });
     }
   } else {
-    smoother?.scrollTop(0);
+    if (smoother) smoother.scrollTop(0);
+    else window.scrollTo({ top: 0, behavior: "auto" });
   }
-
-  ScrollTrigger.refresh();
 }
 
 onMounted(() => {
@@ -52,8 +52,8 @@ onUnmounted(() => {
       <div id="smooth-content">
         <main id="main-content">
           <RouterView v-slot="{ Component, route }">
-            <Transition name="page" mode="out-in">
-              <component :is="Component" :key="route.fullPath" />
+            <Transition name="page" mode="out-in" @after-enter="syncScrollWithRoute">
+              <component :is="Component" :key="route.path" />
             </Transition>
           </RouterView>
         </main>

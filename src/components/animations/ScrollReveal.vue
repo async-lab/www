@@ -11,18 +11,28 @@ onMounted(() => {
 
   ctx = gsap.context(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduceMotion) return;
+    if (reduceMotion) {
+      gsap.set(root.value, { autoAlpha: 1, y: 0, clearProps: "transform,opacity,visibility" });
+      return;
+    }
 
-    gsap.from(root.value, {
-      autoAlpha: 0,
-      y: 32,
-      duration: 0.75,
-      scrollTrigger: {
-        trigger: root.value,
-        start: "top 86%",
-        toggleActions: "play none none reverse",
+    gsap.set(root.value, { willChange: "transform,opacity" });
+    gsap.fromTo(
+      root.value,
+      { autoAlpha: 0, y: 28 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.72,
+        ease: "power3.out",
+        clearProps: "willChange,transform,opacity,visibility",
+        scrollTrigger: {
+          trigger: root.value,
+          start: "top 88%",
+          once: true,
+        },
       },
-    });
+    );
   }, root.value);
 });
 

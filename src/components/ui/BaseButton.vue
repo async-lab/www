@@ -3,13 +3,13 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { computed } from "vue";
 
 const buttonClass = cva(
-  "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary focus-visible:ring-offset-2 focus-visible:ring-offset-lab-bg disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold transition-[color,background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 active:translate-y-0 motion-reduce:transform-none focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary focus-visible:ring-offset-2 focus-visible:ring-offset-lab-bg disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        primary: "bg-lab-primary text-white hover:bg-lab-primaryLight",
+        primary: "bg-lab-primary text-white hover:bg-lab-primaryLight hover:shadow-glow",
         secondary:
-          "border border-lab-border bg-white text-lab-text hover:border-lab-primary hover:text-lab-primary",
+          "border border-lab-border bg-white text-lab-text hover:border-lab-primary hover:text-lab-primary hover:shadow-sm",
         ghost: "text-lab-text hover:text-lab-primary",
       },
       size: {
