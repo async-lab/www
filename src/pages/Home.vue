@@ -16,70 +16,79 @@ let media: ReturnType<typeof gsap.matchMedia> | undefined;
 
 const overview = [
   {
-    value: "04",
-    label: "研究方向",
-    description: "覆盖前端、后端、移动端与嵌入式开发。",
+    value: "2013",
+    label: "团队成立",
+    description: "前身为 IOTU 实验室，从嵌入式开发起步。",
   },
   {
-    value: "08 周",
-    label: "学习路径",
-    description: "从基础训练进入项目协作与技术交流。",
+    value: "多方向",
+    label: "开发团队",
+    description: "覆盖 Web 前端、Java / Go 后端、C++、移动端等方向。",
   },
   {
-    value: "01 套",
-    label: "工程闭环",
-    description: "贯穿需求、设计、开发、联调、部署与复盘。",
+    value: "B413",
+    label: "学习空间",
+    description: "在双中心拥有独立场地，一起学习、做项目与交流技术。",
+  },
+];
+
+const labFacts = [
+  {
+    label: "正式名称",
+    value: "异步开发实验室（Async Lab）",
+  },
+  {
+    label: "所属学校",
+    value: "成都信息工程大学",
+  },
+  {
+    label: "团队前身",
+    value: "IOTU 实验室",
+  },
+  {
+    label: "共同方式",
+    value: "学习 · 项目 · 技术交流",
   },
 ];
 
 const values = [
   {
-    title: "工程实践优先",
-    description: "从需求拆解到部署复盘，让每一次学习都沉淀为可维护、能交付的成果。",
-    icon: GitBranch,
-  },
-  {
-    title: "跨端能力融合",
-    description: "让前端、后端、移动端与嵌入式在同一个项目里理解彼此、共同完成目标。",
+    title: "热爱创造",
+    description: "面向全校各专业对开发感兴趣的同学，让主动学习与动手创造成为共同起点。",
     icon: Layers3,
   },
   {
-    title: "质量贯穿始终",
-    description: "把代码规范、性能、可访问性与协作习惯放进日常开发，而不是留到最后补救。",
+    title: "异步成长",
+    description: "允许不同的发展方向、学习目标和学习方式，在同一个实验室框架下交替前行。",
+    icon: GitBranch,
+  },
+  {
+    title: "同行互助",
+    description: "在共同学习、项目协作和技术交流中彼此推动，也把经验留给后来加入的成员。",
     icon: ShieldCheck,
   },
 ];
 
 const milestones = [
   {
-    year: "阶段 01",
-    title: "IOTU 创立",
-    description: "实验室前身成立，以软件开发为起点，开始聚集对技术实践感兴趣的同学。",
+    year: "2013",
+    title: "IOTU 实验室成立",
+    description: "团队从嵌入式开发起步，为热爱学习与创造的同学提供开发实践空间。",
   },
   {
-    year: "阶段 02",
-    title: "技术方向拓展",
-    description: "逐步形成前端、后端、移动端与嵌入式方向，建立跨端协作的基础。",
+    year: "Growth",
+    title: "多方向团队成形",
+    description: "随着实验室发展，逐步拓展到 Web 前端、Java / Go 后端、C++ 开发与移动端等方向。",
   },
   {
-    year: "阶段 03",
-    title: "培养路径建设",
-    description: "新生依据兴趣选择方向，从基础知识、工程工具和代码规范开始自主学习。",
+    year: "Async",
+    title: "异步理念形成",
+    description: "成员拥有不同方向、目标与学习方式，在共同框架下互相追赶、交替前行。",
   },
   {
-    year: "阶段 04",
-    title: "工程实践沉淀",
-    description: "从技术学习走向协作开发，以真实需求、联调和复盘检验解决问题的能力。",
-  },
-  {
-    year: "阶段 05",
-    title: "更名 · 理念升级",
-    description: "2021 年 Asynchronous Lab 正式启用，形成开放协作、异步成长的共同理念。",
-  },
-  {
-    year: "阶段 06",
-    title: "持续发展 · 传承",
-    description: "保持开放的学习与项目平台，让每一届同学都能找到愿意长期投入的方向。",
+    year: "Together",
+    title: "学习、项目与交流",
+    description: "在双中心 B413 一起学习、做项目、交流技术，让个人积累持续汇入团队成长。",
   },
 ];
 
@@ -148,12 +157,36 @@ onUnmounted(() => {
           </div>
 
           <ScrollReveal>
-            <SectionTitle
-              title="在不同技术栈之间，建立同一套解决问题的能力"
-              description="我们围绕真实项目组织学习：先理解需求，再选择合适的技术，把设计、编码、联调和交付连成完整过程。方向可以不同，工程判断与协作方式始终相通。"
-            />
+            <div>
+              <SectionTitle
+                title="从嵌入式起步，成长为面向多方向的开发团队"
+                description="异步开发实验室（Async Lab）成立于 2013 年，前身为 IOTU 实验室。团队汇聚全校各专业热爱创造、热爱学习、热爱生活的同学，在 Web 前端、后端、C++ 与嵌入式、移动端等方向持续探索。"
+              />
+
+              <dl class="mt-12 grid border-t border-lab-border sm:grid-cols-2 sm:gap-x-10">
+                <div v-for="fact in labFacts" :key="fact.label" class="border-b border-lab-border py-5 sm:py-6">
+                  <dt class="font-mono text-xs uppercase tracking-[0.16em] text-lab-muted">{{ fact.label }}</dt>
+                  <dd class="mt-3 text-sm font-semibold leading-7 text-lab-text md:text-base">{{ fact.value }}</dd>
+                </div>
+              </dl>
+            </div>
           </ScrollReveal>
         </div>
+
+        <ScrollReveal>
+          <div class="mt-16 grid gap-8 border-l-2 border-lab-primary bg-lab-surface px-6 py-8 md:grid-cols-[0.35fr_1.65fr] md:px-10 md:py-10">
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-lab-primary">Why Async</p>
+            <div>
+              <h3 class="max-w-3xl font-display text-2xl font-semibold leading-tight text-lab-text md:text-3xl">
+                不同方向、不同目标、不同方式，
+                <span class="block">在同一个框架下交替前行</span>
+              </h3>
+              <p class="mt-5 max-w-3xl text-sm leading-8 text-lab-muted md:text-base">
+                “Async”来自计算机中的异步处理：不必阻塞当前线程等待，而是让后续操作继续推进。实验室借用这一概念，希望每位成员都能沿自己的方向成长，又在共同学习、项目协作与技术交流中彼此推动。
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
 
         <ScrollReveal>
           <div class="mt-20 grid border-y border-lab-border md:grid-cols-3 md:divide-x md:divide-lab-border">
@@ -183,11 +216,11 @@ onUnmounted(() => {
           <div>
             <p class="font-mono text-xs uppercase text-[#7cb5ff]">02 / Timeline</p>
             <h2 id="history-title" class="mt-4 font-display text-3xl font-semibold leading-tight md:text-5xl">
-              实验室发展路径
+              从 IOTU 到 Async Lab
             </h2>
           </div>
           <p class="max-w-md text-sm leading-7 text-white/60 md:text-right">
-            从兴趣聚集到跨端协作，实验室在持续实践中形成自己的培养方式与技术文化。
+            名称与方向不断发展，始终不变的是对创造、学习和共同成长的热爱。
           </p>
         </div>
 
@@ -207,7 +240,7 @@ onUnmounted(() => {
         >
           <div class="flex items-center justify-between gap-6">
             <p class="font-mono text-sm text-[#7cb5ff]">{{ milestone.year }}</p>
-            <span class="font-mono text-xs text-white/35">0{{ index + 1 }} / 06</span>
+            <span class="font-mono text-xs text-white/35">0{{ index + 1 }} / 04</span>
           </div>
           <h3 class="mt-10 text-2xl font-semibold text-white">{{ milestone.title }}</h3>
           <p class="mt-5 max-w-sm text-sm leading-8 text-white/60">{{ milestone.description }}</p>
@@ -226,7 +259,7 @@ onUnmounted(() => {
             <SectionTitle
               eyebrow="03 / Lab Culture"
               title="代码即艺术，技术驱动创新"
-              description="我们更看重解决真实问题的过程：清楚地思考，坦诚地协作，把质量做进每一次提交，也把经验留给后来的人。"
+              description="我们相信热爱创造、热爱学习、热爱生活的人可以彼此影响。不同方向不必保持同一步调，但会在分享、项目与长期陪伴中共同向前。"
             />
           </div>
         </ScrollReveal>

@@ -429,7 +429,7 @@ onUnmounted(() => {
         <div
           class="hero-kicker mb-8 inline-flex items-center rounded-full border border-lab-border bg-white/90 px-4 py-2 backdrop-blur-sm"
         >
-          <span class="font-mono text-xs uppercase text-lab-muted">Development Lab · Code the Future</span>
+          <span class="font-mono text-xs uppercase text-lab-muted">Async Lab · Since 2013</span>
         </div>
 
         <div

@@ -33,8 +33,8 @@ const router = createRouter({
 });
 
 router.afterEach((to) => {
-  const title = typeof to.meta.title === "string" ? to.meta.title : "开发实验室";
-  document.title = `${title} - 开发实验室官网`;
+  const title = typeof to.meta.title === "string" ? to.meta.title : "异步开发实验室";
+  document.title = `${title} - 异步开发实验室官网`;
 });
 
 export default router;

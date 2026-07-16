@@ -59,11 +59,11 @@ watch(
           class="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-lab-border bg-white font-mono text-sm font-bold text-lab-text"
           aria-hidden="true"
         >
-          DL
+          AL
         </span>
         <span class="min-w-0">
           <span class="block truncate font-display text-sm font-semibold text-lab-text sm:text-base">异步开发实验室</span>
-          <span class="block truncate font-mono text-[11px] uppercase text-lab-muted">Development Lab</span>
+          <span class="block truncate font-mono text-[11px] uppercase text-lab-muted">Async Lab</span>
         </span>
       </RouterLink>
 

@@ -1,12 +1,14 @@
 {
-  "name": "开发实验室",
-  "englishName": "Development Lab",
-  "slogan": "Code the Future",
+  "name": "异步开发实验室",
+  "englishName": "Async Lab",
+  "shortName": "Async",
+  "slogan": "待确认",
   "school": "成都信息工程大学",
-  "foundedAt": "待确认",
+  "foundedAt": "2013",
+  "originName": "IOTU 实验室",
   "contact": {
     "email": "待确认",
-    "address": "成都信息工程大学双中心",
+    "address": "成都信息工程大学双中心 B413",
     "github": "https://github.com/async-lab"
   }
 }

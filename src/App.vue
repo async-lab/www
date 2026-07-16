@@ -15,15 +15,27 @@ async function syncScrollWithRoute() {
   const smoother = getScrollSmoother();
   ScrollTrigger.refresh();
 
+  const refreshAfterPositioning = () => {
+    requestAnimationFrame(() => {
+      ScrollTrigger.refresh();
+      ScrollTrigger.update();
+    });
+  };
+
   if (route.hash) {
     const target = document.querySelector(route.hash);
     if (target) {
       smoother?.scrollTo(target, true, "top 96px");
-      if (!smoother) target.scrollIntoView({ block: "start" });
+      if (!smoother) {
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - 96;
+        window.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+      }
+      refreshAfterPositioning();
     }
   } else {
     if (smoother) smoother.scrollTop(0);
     else window.scrollTo({ top: 0, behavior: "auto" });
+    refreshAfterPositioning();
   }
 }
 

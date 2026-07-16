@@ -20,12 +20,12 @@
     },
     ".codegraph/codegraph.db": {
       "ipo_ts": 1782565241961,
-      "edit_count": 95,
-      "last_lines": 1387,
-      "last_ts": 1783675953292,
+      "edit_count": 98,
+      "last_lines": 1398,
+      "last_ts": 1784199643162,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "6f84ed2"
+      "last_content_hash": "23385546"
     },
     "docs/实验室官网项目文档.md": {
       "ipo_ts": 1782565274027,
@@ -38,30 +38,30 @@
     },
     ".codegraph/daemon.log": {
       "ipo_ts": 1782565353411,
-      "edit_count": 83,
-      "last_lines": 105,
-      "last_ts": 1783675953350,
+      "edit_count": 86,
+      "last_lines": 112,
+      "last_ts": 1784199643249,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "b02717e7"
+      "last_content_hash": "de1b3a4"
     },
     ".codegraph/codegraph.db-shm": {
       "ipo_ts": 1782565353683,
-      "edit_count": 2,
-      "last_lines": 6,
-      "last_ts": 1782821487043,
+      "edit_count": 4,
+      "last_lines": 13,
+      "last_ts": 1784199642139,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "72a68135"
+      "last_content_hash": "432976c0"
     },
     ".codegraph/daemon.pid": {
       "ipo_ts": 1782565353693,
-      "edit_count": 3,
+      "edit_count": 5,
       "last_lines": 6,
-      "last_ts": 1783673492104,
+      "last_ts": 1784199642065,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "bd42888b"
+      "last_content_hash": "f14b24fe"
     },
     "package.json": {
       "ipo_ts": 1782565677227,
@@ -74,12 +74,12 @@
     },
     "index.html": {
       "ipo_ts": 1782565678029,
-      "edit_count": 2,
+      "edit_count": 4,
       "last_lines": 23,
-      "last_ts": 1782740490370,
+      "last_ts": 1784198609393,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2a3cf25c"
+      "last_content_hash": "38c20251"
     },
     "vite.config.ts": {
       "ipo_ts": 1782565678831,
@@ -146,12 +146,12 @@
     },
     "src/router/index.ts": {
       "ipo_ts": 1782565685996,
-      "edit_count": 3,
+      "edit_count": 4,
       "last_lines": 40,
-      "last_ts": 1783675661293,
+      "last_ts": 1784198559793,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "bca6282e"
+      "last_content_hash": "2c89bd4e"
     },
     "src/stores/app.ts": {
       "ipo_ts": 1782565687312,
@@ -173,39 +173,39 @@
     },
     ".codegraph/codegraph.db-wal": {
       "ipo_ts": 1782565690941,
-      "edit_count": 94,
-      "last_lines": 10354,
-      "last_ts": 1783675953232,
+      "edit_count": 97,
+      "last_lines": 10357,
+      "last_ts": 1784199643089,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "66202912"
+      "last_content_hash": "dfcb6d8e"
     },
     "src/App.vue": {
       "ipo_ts": 1782565755990,
-      "edit_count": 16,
-      "last_lines": 64,
-      "last_ts": 1783675554454,
+      "edit_count": 18,
+      "last_lines": 76,
+      "last_ts": 1784199355180,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "1644e534"
+      "last_content_hash": "2030b87c"
     },
     "src/components/layout/SiteHeader.vue": {
       "ipo_ts": 1782565757400,
-      "edit_count": 8,
+      "edit_count": 9,
       "last_lines": 117,
-      "last_ts": 1783674543543,
+      "last_ts": 1784198555376,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "8e90b46b"
+      "last_content_hash": "726ab629"
     },
     "src/components/layout/SiteFooter.vue": {
       "ipo_ts": 1782565758206,
-      "edit_count": 9,
-      "last_lines": 47,
-      "last_ts": 1782821763646,
+      "edit_count": 10,
+      "last_lines": 56,
+      "last_ts": 1784198556782,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "bca59cc9"
+      "last_content_hash": "81fde29d"
     },
     "src/components/shared/ThemeToggle.vue": {
       "ipo_ts": 1782565759597,
@@ -263,12 +263,12 @@
     },
     "src/components/home/HeroSection.vue": {
       "ipo_ts": 1782565857975,
-      "edit_count": 44,
+      "edit_count": 45,
       "last_lines": 500,
-      "last_ts": 1783675950118,
+      "last_ts": 1784198557581,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "fa31c3c7"
+      "last_content_hash": "fa08a8b3"
     },
     "src/components/home/ResearchDirections.vue": {
       "ipo_ts": 1782565858716,
@@ -281,12 +281,12 @@
     },
     "src/pages/Home.vue": {
       "ipo_ts": 1782565860065,
-      "edit_count": 29,
-      "last_lines": 273,
-      "last_ts": 1783675317725,
+      "edit_count": 32,
+      "last_lines": 306,
+      "last_ts": 1784199259532,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "81a8b51"
+      "last_content_hash": "766ae227"
     },
     "src/pages/Join.vue": {
       "ipo_ts": 1782565964403,
@@ -308,21 +308,21 @@
     },
     "README.md": {
       "ipo_ts": 1782565991370,
-      "edit_count": 2,
+      "edit_count": 3,
       "last_lines": 62,
-      "last_ts": 1782566717860,
+      "last_ts": 1784198560922,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "ea3b8ec5"
+      "last_content_hash": "291e57c2"
     },
     "public/data/site.json": {
       "ipo_ts": 1782565992726,
-      "edit_count": 4,
-      "last_lines": 12,
-      "last_ts": 1782569078192,
+      "edit_count": 5,
+      "last_lines": 14,
+      "last_ts": 1784198554287,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "21e64f2f"
+      "last_content_hash": "8d039725"
     },
     "public/data/tech-stack.json": {
       "ipo_ts": 1782565993450,
@@ -114401,12 +114401,12 @@
     },
     "dist/data/site.json": {
       "ipo_ts": 1782566718023,
-      "edit_count": 2,
-      "last_lines": 12,
-      "last_ts": 1782740910162,
+      "edit_count": 3,
+      "last_lines": 14,
+      "last_ts": 1784198594728,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "21e64f2f"
+      "last_content_hash": "8d039725"
     },
     "dist/data/tech-stack.json": {
       "ipo_ts": 1782566718108,
@@ -114464,12 +114464,12 @@
     },
     "dist/index.html": {
       "ipo_ts": 1782566719155,
-      "edit_count": 10,
+      "edit_count": 14,
       "last_lines": 24,
-      "last_ts": 1783675998594,
+      "last_ts": 1784199490856,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "1fa9efcc"
+      "last_content_hash": "9daa7a04"
     },
     "public/logo/黑色背景透明.svg": {
       "ipo_ts": 1782823049155,
@@ -114560,6 +114560,161 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "f233605d"
+    },
+    ".codegraph/codegraph.lock": {
+      "ipo_ts": 1784196829910,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784196829910,
+      "delisted": true,
+      "last_source": "onEdit",
+      "last_content_hash": "2e6ba99",
+      "delisted_at": 1784197498430,
+      "delist_rounds": 0
+    },
+    "dist/assets/Home-DhB5NXT6.js": {
+      "ipo_ts": 1784198594851,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784198594851,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "977eb433"
+    },
+    "dist/assets/Home-DtgXDJDx.css": {
+      "ipo_ts": 1784198594906,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784198594906,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9590ad9c"
+    },
+    "dist/assets/Join-C4cH0m7t.js": {
+      "ipo_ts": 1784198594972,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784198594972,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3bfe3860"
+    },
+    "dist/assets/index-4JXUvrMd.css": {
+      "ipo_ts": 1784198595049,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784198595049,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "67ea10a1"
+    },
+    "dist/assets/index-DZQeHERj.js": {
+      "ipo_ts": 1784198595105,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784198595105,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8d48d0c2"
+    },
+    "dist/assets/researchDirections-BXmH1x_Y.js": {
+      "ipo_ts": 1784198595163,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1784198595163,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a13762b2"
+    },
+    "dist/assets/Home-B9K5E8mN.js": {
+      "ipo_ts": 1784199201328,
+      "edit_count": 2,
+      "last_lines": 26,
+      "last_ts": 1784199218220,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8d4d851a"
+    },
+    "dist/assets/Join-BmWpKKPw.js": {
+      "ipo_ts": 1784199201393,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784199201393,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ee83672d"
+    },
+    "dist/assets/index-DHEFeAu5.js": {
+      "ipo_ts": 1784199201465,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784199201465,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8e08a85d"
+    },
+    "dist/assets/index-DPZQ54Qh.css": {
+      "ipo_ts": 1784199201523,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784199201523,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "39e589dd"
+    },
+    "dist/assets/researchDirections-CjKrGP8D.js": {
+      "ipo_ts": 1784199201588,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1784199201588,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b7190f50"
+    },
+    "HANDOFF.md": {
+      "ipo_ts": 1784199457589,
+      "edit_count": 1,
+      "last_lines": 125,
+      "last_ts": 1784199457589,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b39e82f0"
+    },
+    "dist/assets/Home-xzcs8dXI.js": {
+      "ipo_ts": 1784199490611,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784199490611,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "888dd854"
+    },
+    "dist/assets/Join-B94FyKve.js": {
+      "ipo_ts": 1784199490671,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784199490671,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a4a17363"
+    },
+    "dist/assets/index-ujj2IQqJ.js": {
+      "ipo_ts": 1784199490734,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784199490734,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3071814f"
+    },
+    "dist/assets/researchDirections-B1uWUZLF.js": {
+      "ipo_ts": 1784199490793,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1784199490793,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4a5f7133"
     }
   }
 }
