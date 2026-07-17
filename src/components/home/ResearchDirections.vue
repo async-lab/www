@@ -16,12 +16,11 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
  * 常用修改入口
  *
  * - 研究方向数据：src/data/researchDirections.ts
- * - 桌面固定滚动距离：下方 ScrollTrigger 的 end
+ * - 桌面固定滚动距离（即每个方向的停留时长）：下方 ScrollTrigger 的 end
  * - 面板淡入淡出节奏：panels.forEach() 内的 transitionStart 和 duration
- * - 自动吸附等待时间：ScrollTrigger snap 的 delay
- * - 自动吸附动画时间：ScrollTrigger snap 的 duration
  *
- * 桌面滚轮吸附由 ScrollTrigger 内置 snap 负责，不额外注册 wheel 监听。
+ * 桌面端没有滚轮吸附：四个方向的切换完全由滚动进度线性驱动（scrub: true），
+ * 滚多少切多少，停在哪个进度就停在哪个面板，不会自动吸附到最近的方向。
  */
 
 /** 整个研究方向 section 的 DOM 引用，也是 ScrollTrigger 的 trigger 和 GSAP 选择器作用域。 */
@@ -75,7 +74,7 @@ onMounted(() => {
         section.value?.querySelectorAll<HTMLElement>(".research-panel--desktop") ?? [],
       );
 
-      // 小于 1024px 时完全交给 Vue + CSS 手风琴，不注册 wheel 监听，也不创建 ScrollTrigger。
+      // 小于 1024px 时完全交给 Vue + CSS 手风琴，不创建 ScrollTrigger。
       if (!desktop) {
         return;
       }
@@ -106,8 +105,8 @@ onMounted(() => {
       const timelineState = { progress: 0 };
 
       /**
-       * 桌面端主时间线：负责固定 section、把滚动距离映射为时间线进度、切换面板，
-       * 并通过 ScrollTrigger 内置 snap 在滚动停止后吸附到最近的方向落点。
+       * 桌面端主时间线：负责固定 section、把滚动距离映射为时间线进度、切换面板。
+       * 没有滚轮吸附，onUpdate 只负责把当前滚动进度同步给左侧的进度指示器。
        */
       const timeline = gsap.timeline({
         // 时间线本身必须线性跟随滚动，面板进入/退出的节奏由各 tween 的持续时间控制。
@@ -116,8 +115,9 @@ onMounted(() => {
           // section 顶部到达视口顶部时开始固定。
           trigger: section.value,
           start: "top top",
-          // 四个面板当前得到 2080px；修改 520 会改变每个方向分配到的滚动距离。
-          end: `+=${Math.max(1900, panels.length * 520)}`,
+          // 四个面板当前得到 4800px（每个方向 1200px）；修改 1200 可整体拉长或缩短每个
+          // 方向的停留距离，即滚动多久才会切到下一个方向。
+          end: `+=${Math.max(1200, panels.length * 500)}`,
           // true 表示时间线进度直接跟随当前滚动位置，不额外增加 scrub 追赶延迟。
           scrub: true,
           // 固定 section；GSAP 会自动创建 pin spacer 保留对应的页面滚动高度。
@@ -126,23 +126,10 @@ onMounted(() => {
           anticipatePin: 1,
           // 窗口尺寸或布局刷新后重新计算 start/end 和依赖函数。
           invalidateOnRefresh: true,
-          snap: {
-            // 四个方向均匀分布在时间线的 0、1/3、2/3、1 进度上。
-            snapTo: 1 / (panels.length - 1),
-            // 根据剩余距离自动选择时长，近距离轻快、远距离保持平滑。
-            duration: { min: 0.2, max: 0.45 },
-            // 等滚轮输入短暂停止后再吸附，避免与用户持续滚动争抢控制权。
-            delay: 0.08,
-            ease: "power1.inOut",
-            // 不根据惯性预测额外落点，始终吸附到当前滚动方向上的相邻等分点。
-            inertia: false,
-            directional: true,
-          },
           onUpdate: (self) => {
             /**
              * self.progress 始终在 0～1 之间。
-             * 这里仅负责左侧指示器高亮，不负责自动吸附目标；
-             * Math.round 会把当前滚动进度映射为最接近的面板索引。
+             * Math.round 会把当前滚动进度映射为最接近的面板索引，驱动左侧指示器高亮。
              */
             const nextIndex = Math.min(
               panels.length - 1,
@@ -197,7 +184,7 @@ onMounted(() => {
           );
       });
 
-      // 切换媒体条件或卸载组件时，GSAP context 会自动撤销 timeline、pin 和内置 snap。
+      // 切换媒体条件或卸载组件时，GSAP context 会自动撤销 timeline 和 pin。
       return () => {
         activeDirection.value = 0;
       };
