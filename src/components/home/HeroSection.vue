@@ -303,21 +303,10 @@ function finalizeHeroEntrance() {
 
   gsap.set(
     [
-      ".hero-ribbon",
+      ".hero-background-art",
+      ".hero-particles",
       ".hero-kicker",
       ".hero-title-text",
-      ".hero-logo",
-      ".hero-body",
-      ".hero-scroll-cue",
-    ],
-    { autoAlpha: 1, x: 0, y: 0, scale: 1 },
-  );
-  gsap.set(
-    [
-      ".hero-ribbon",
-      ".hero-kicker",
-      ".hero-title-text",
-      ".hero-logo",
       ".hero-body",
       ".hero-scroll-cue",
     ],
@@ -341,10 +330,10 @@ onMounted(() => {
     }
 
     const animatedElements = [
-      ".hero-ribbon",
+      ".hero-background-art",
+      ".hero-particles",
       ".hero-kicker",
       ".hero-title-text",
-      ".hero-logo",
       ".hero-body",
       ".hero-scroll-cue",
     ];
@@ -357,7 +346,13 @@ onMounted(() => {
 
     timeline
       .fromTo(
-        ".hero-ribbon",
+        ".hero-background-art",
+        { autoAlpha: 0, scale: 0.94 },
+        { autoAlpha: 1, scale: 1, duration: 1.12 },
+        0,
+      )
+      .fromTo(
+        ".hero-particles",
         { autoAlpha: 0, scaleX: 0.96, transformOrigin: "right center" },
         { autoAlpha: 1, scaleX: 1, duration: 0.84 },
         0,
@@ -366,35 +361,29 @@ onMounted(() => {
         ".hero-kicker",
         { autoAlpha: 0, y: 14 },
         { autoAlpha: 1, y: 0, duration: 0.48 },
-        0.08,
+        0.12,
       )
-      .add(startTypewriter, 0.18)
+      .add(startTypewriter, 0.86)
       .fromTo(
         ".hero-title-text",
-        { autoAlpha: 0, y: 26 },
-        { autoAlpha: 1, y: 0, duration: 0.72 },
-        0.14,
-      )
-      .fromTo(
-        ".hero-logo",
-        { autoAlpha: 0, x: 24, y: -10, scale: 0.96 },
-        { autoAlpha: 1, x: 0, y: 0, scale: 1, duration: 0.72 },
-        0.22,
+        { autoAlpha: 0, y: 28 },
+        { autoAlpha: 1, y: 0, duration: 0.76 },
+        0.84,
       )
       .fromTo(
         ".hero-body",
         { autoAlpha: 0, y: 22 },
         { autoAlpha: 1, y: 0, duration: 0.68 },
-        0.46,
+        1.12,
       )
       .fromTo(
         ".hero-scroll-cue",
         { autoAlpha: 0, y: -10 },
         { autoAlpha: 1, y: 0, duration: 0.48 },
-        0.72,
+        1.34,
       );
 
-    heroFallbackTimer = window.setTimeout(finalizeHeroEntrance, 2400);
+    heroFallbackTimer = window.setTimeout(finalizeHeroEntrance, 3200);
   }, hero.value);
 });
 
@@ -408,36 +397,41 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section
-    ref="hero"
-    class="relative min-h-[calc(100svh-2rem)] overflow-hidden border-b border-lab-border bg-white pt-28"
-    aria-labelledby="hero-title"
-  >
-    <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#ffffff_0%,#ffffff_56%,#f5f5f7_100%)]" />
-    <div class="pointer-events-none absolute inset-x-0 top-[42%] h-px bg-lab-border/60" aria-hidden="true" />
-    <div
-      class="pointer-events-none absolute bottom-0 right-[16%] top-28 hidden w-px bg-lab-border/60 lg:block"
-      aria-hidden="true"
-    />
+  <section ref="hero" class="relative min-h-[100svh] overflow-hidden bg-white" aria-labelledby="hero-title">
+    <div class="hero-ribbon pointer-events-none absolute inset-0 z-0 bg-white" aria-hidden="true">
+      <div
+        class="absolute inset-0 flex items-center justify-center px-5 sm:px-10 lg:justify-end lg:px-0"
+      >
+        <div
+          class="hero-background-art w-[88vw] max-w-[42rem] sm:w-[78vw] md:w-[68vw] lg:h-[100svh] lg:w-auto lg:max-w-none lg:translate-x-[8svh]"
+        >
+          <img
+            class="h-auto w-full max-w-full object-contain opacity-[0.07] sm:opacity-[0.09] lg:h-full lg:w-auto lg:max-w-none lg:opacity-[0.12]"
+            :src="logoSrc"
+            alt=""
+            width="500"
+            height="500"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
 
-    <div class="hero-ribbon pointer-events-none absolute inset-0" aria-hidden="true">
-      <canvas ref="particleCanvas" class="absolute inset-0 h-full w-full opacity-80" />
+      <canvas ref="particleCanvas" class="hero-particles absolute inset-0 z-10 h-full w-full opacity-80" />
     </div>
 
-    <div class="lab-container relative z-10 flex min-h-[calc(100svh-9rem)] items-center">
-      <div class="hero-copy w-full max-w-6xl pb-24 pt-12 sm:pb-28">
-        <div
-          class="hero-kicker mb-8 inline-flex items-center rounded-full border border-lab-border bg-white/90 px-4 py-2 backdrop-blur-sm"
-        >
-          <span class="font-mono text-xs uppercase text-lab-muted">Async Lab · Since 2013</span>
-        </div>
+    <div class="lab-container relative z-10 flex min-h-[100svh] items-center pb-16 pt-32 sm:pb-20 sm:pt-36">
+      <div class="grid w-full items-center lg:grid-cols-[minmax(0,0.95fr)_minmax(18rem,0.55fr)] lg:gap-12">
+        <div class="hero-copy max-w-4xl py-8 sm:py-12">
+          <div
+            class="hero-kicker mb-8 inline-flex items-center rounded-full border border-lab-border bg-white/[0.92] px-4 py-2 shadow-sm backdrop-blur-sm"
+          >
+            <span class="font-mono text-xs uppercase tracking-[0.12em] text-lab-muted">Async Lab · Since 2013</span>
+          </div>
 
-        <div
-          class="hero-title-lockup grid w-full grid-cols-1 items-start gap-7 md:grid-cols-[minmax(0,4fr)_minmax(10rem,1fr)] md:items-center md:gap-12"
-        >
           <h1
             id="hero-title"
-            class="hero-title-text order-2 min-w-0 font-display text-5xl font-semibold leading-tight text-lab-text sm:text-6xl md:order-1 md:text-7xl lg:text-8xl"
+            class="hero-title-text max-w-4xl font-display text-5xl font-semibold leading-[1.08] tracking-[-0.035em] text-lab-text sm:text-6xl md:text-7xl lg:text-[5.5rem]"
           >
             <span class="sr-only">{{ title }}</span>
             <span class="relative block" aria-hidden="true">
@@ -452,38 +446,30 @@ onUnmounted(() => {
             </span>
           </h1>
 
-          <img
-            class="hero-logo order-1 aspect-square w-24 shrink-0 justify-self-start object-contain drop-shadow-[0_18px_32px_rgba(0,102,255,0.12)] md:order-2 md:w-full md:max-w-[220px] md:justify-self-end"
-            :src="logoSrc"
-            alt="异步开发实验室 Logo"
-            width="500"
-            height="500"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </div>
+          <div class="hero-body max-w-2xl">
+            <p class="mt-8 text-base leading-8 text-lab-muted md:text-lg md:leading-9">
+              连接前端、后端、移动端与嵌入式技术，用工程能力把想法推进到真实可用的产品和系统。
+            </p>
 
-        <div class="hero-body">
-          <p class="mt-8 max-w-2xl text-base leading-8 text-lab-muted md:text-xl md:leading-9">
-            连接前端、后端、移动端与嵌入式技术，用工程能力把想法推进到真实可用的产品和系统。
-          </p>
-
-          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-            <BaseButton as="RouterLink" to="/#about" size="lg">
-              了解实验室
-              <ArrowRight class="h-4 w-4" aria-hidden="true" />
-            </BaseButton>
-            <BaseButton as="RouterLink" to="/join" variant="secondary" size="lg">
-              加入我们
-            </BaseButton>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+              <BaseButton as="RouterLink" to="/#about" size="lg">
+                了解实验室
+                <ArrowRight class="h-4 w-4" aria-hidden="true" />
+              </BaseButton>
+              <BaseButton as="RouterLink" to="/join" variant="secondary" size="lg">
+                加入我们
+              </BaseButton>
+            </div>
           </div>
         </div>
+
+        <div class="hidden lg:block" aria-hidden="true" />
       </div>
     </div>
 
     <RouterLink
       to="/#about"
-      class="hero-scroll-cue absolute bottom-6 right-4 z-20 grid h-12 w-12 cursor-pointer place-items-center rounded-full border border-lab-border bg-white/90 text-lab-text shadow-sm backdrop-blur-sm transition-[color,border-color,transform] duration-200 hover:-translate-y-1 hover:border-lab-primary hover:text-lab-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary sm:right-6 lg:right-8"
+      class="hero-scroll-cue absolute bottom-6 right-4 z-20 grid h-12 w-12 cursor-pointer place-items-center rounded-full border border-lab-border bg-white/[0.92] text-lab-text shadow-sm backdrop-blur-sm transition-[color,border-color,transform] duration-200 hover:-translate-y-1 hover:border-lab-primary hover:text-lab-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary sm:right-6 lg:right-8"
       aria-label="浏览下一部分"
     >
       <ArrowDown class="h-5 w-5" aria-hidden="true" />

@@ -55,12 +55,14 @@ watch(
       aria-label="主导航"
     >
       <RouterLink to="/" class="flex min-w-0 items-center gap-4 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary">
-        <span
-          class="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-lab-border bg-white font-mono text-sm font-bold text-lab-text"
+        <img
+          src="/logo/白色背景_透明.svg"
+          alt=""
+          class="h-1/2 w-1/1 shrink-0 rounded-lg border border-lab-border bg-white object-contain p-1"
+          width="40"
+          height="40"
           aria-hidden="true"
-        >
-          AL
-        </span>
+        />
         <span class="min-w-0">
           <span class="block truncate font-display text-sm font-semibold text-lab-text sm:text-base">异步开发实验室</span>
           <span class="block truncate font-mono text-[11px] uppercase text-lab-muted">Async Lab</span>
