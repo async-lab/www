@@ -1,6 +1,8 @@
 import { Code2, Cpu, Server, Smartphone } from "@lucide/vue";
 import type { Component } from "vue";
 
+// 研究方向的数据结构定义。ResearchDirections.vue（首页）与 Join.vue（招募页）
+// 共用同一份数据源，保证两处方向介绍内容一致。
 export interface ResearchDirection {
   id: "frontend" | "backend" | "mobile" | "embedded";
   title: string;
@@ -12,6 +14,7 @@ export interface ResearchDirection {
   topics: string[];
 }
 
+// 四大研究方向的具体内容。新增/调整方向时只需修改这里，两个页面会自动同步更新。
 export const researchDirections: ResearchDirection[] = [
   {
     id: "frontend",

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// 通用区块标题：统一各 section 的“小标签 + 大标题 + 描述文字”排版，align 控制左对齐或居中。
 withDefaults(
   defineProps<{
     eyebrow?: string;

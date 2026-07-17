@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// 主题切换按钮（浅色/深色）。当前站点主题固定为 light（见 stores/app.ts 的 getPreferredTheme），
+// 此组件已实现完整交互逻辑，但尚未在任何页面/布局中引入，属于预留组件。
 import { Moon, Sun } from "@lucide/vue";
 import { computed } from "vue";
 

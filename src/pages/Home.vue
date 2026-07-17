@@ -1,4 +1,8 @@
 <script setup lang="ts">
+// 首页：由 Hero 首屏 + 关于我们(About) + 研究方向(ResearchDirections 子组件) +
+// 发展历程(History，横向滚动时间线) + 实验室文化(Culture) + 加入我们引导条 组成。
+// 页面内所有静态展示数据（overview/labFacts/values/milestones）都直接写在这里，
+// 因为它们只在首页使用一次，不需要抽到 src/data 目录。
 import { ArrowRight, GitBranch, Layers3, ShieldCheck } from "@lucide/vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
@@ -10,10 +14,13 @@ import BaseButton from "@/components/ui/BaseButton.vue";
 import { gsap } from "@/lib/gsap";
 
 const page = ref<HTMLElement | null>(null);
+/** 发展历程区块中横向排列的卡片容器，会被 GSAP 水平位移实现横向滚动效果。 */
 const timelineTrack = ref<HTMLElement | null>(null);
+/** 发展历程区块顶部的进度条，随横向滚动进度从左到右填充。 */
 const timelineProgress = ref<HTMLElement | null>(null);
 let media: ReturnType<typeof gsap.matchMedia> | undefined;
 
+// “关于我们”区块下方的三项统计数据。
 const overview = [
   {
     value: "2013",
@@ -32,6 +39,7 @@ const overview = [
   },
 ];
 
+// “关于我们”区块的实验室基本信息表格。
 const labFacts = [
   {
     label: "正式名称",
@@ -51,6 +59,7 @@ const labFacts = [
   },
 ];
 
+// “实验室文化”区块的三条价值观卡片。
 const values = [
   {
     title: "热爱创造",
@@ -69,6 +78,7 @@ const values = [
   },
 ];
 
+// “发展历程”区块的四个里程碑卡片，按顺序排列在横向滚动轨道中。
 const milestones = [
   {
     year: "2013",
@@ -95,6 +105,13 @@ const milestones = [
 onMounted(() => {
   if (!page.value) return;
 
+  /**
+   * “发展历程”横向滚动时间线：
+   * - 仅在桌面端（≥768px）且未开启“减少动态效果”时生效；
+   * - 通过 pin 固定 .history-scroll 区块，用垂直滚动距离驱动卡片轨道横向位移，
+   *   同时让顶部进度条同步从 0 拉伸到 1。
+   * - 移动端或减少动态效果时，直接清除 transform，让卡片轨道保持普通横向 flex 布局（可原生横滑）。
+   */
   media = gsap.matchMedia();
   media.add(
     {
@@ -116,6 +133,7 @@ onMounted(() => {
         return;
       }
 
+      // 轨道需要横向滚动的总距离 = 轨道内容总宽度 - 视口宽度 + 64px 右侧留白。
       const distance = () => Math.max(0, track.scrollWidth - window.innerWidth + 64);
       gsap.set(progress, { scaleX: 0, transformOrigin: "left center" });
 
@@ -123,7 +141,9 @@ onMounted(() => {
         scrollTrigger: {
           trigger: ".history-scroll",
           start: "top top",
+          // 需要多滚动的像素距离；额外加 520px 让固定结束后仍有一段缓冲，过渡更自然。
           end: () => `+=${Math.max(1200, distance() + 520)}`,
+          // scrub 让时间线进度直接与滚动进度绑定（0.8s 平滑追赶），而非独立播放。
           scrub: 0.8,
           pin: true,
           anticipatePin: 1,
@@ -148,6 +168,7 @@ onUnmounted(() => {
   <div ref="page">
     <HeroSection />
 
+    <!-- 01 / About：实验室简介 + 基本信息表 + “Why Async” 说明 + 三项统计数据。 -->
     <section id="about" class="scroll-mt-28 border-b border-lab-border bg-white py-24 md:py-28">
       <div class="lab-container">
         <div class="grid gap-12 lg:grid-cols-[minmax(0,0.55fr)_minmax(0,1.45fr)] lg:gap-20">
@@ -204,8 +225,10 @@ onUnmounted(() => {
       </div>
     </section>
 
+    <!-- 独立组件：四个研究方向的桌面固定切换 / 移动端手风琴展示，详见 components/home/ResearchDirections.vue。 -->
     <ResearchDirections />
 
+    <!-- 02 / Timeline：发展历程，桌面端为固定 + 横向滚动的时间线卡片轨道。 -->
     <section
       id="history"
       class="history-scroll relative scroll-mt-28 overflow-hidden bg-lab-text py-24 text-white md:min-h-screen md:py-28"
@@ -224,11 +247,13 @@ onUnmounted(() => {
           </p>
         </div>
 
+        <!-- 顶部进度条：scaleX 由上方 onMounted 中的 GSAP 时间线驱动，随滚动从 0 拉伸到 1。 -->
         <div class="mt-12 hidden h-px overflow-hidden bg-white/15 md:block" aria-hidden="true">
           <div ref="timelineProgress" class="h-full w-full origin-left bg-lab-primary" />
         </div>
       </div>
 
+      <!-- 卡片横向轨道：桌面端由 GSAP 控制 x 位移模拟横向滚动；移动端/减少动态效果时为普通纵向 flex 列表。 -->
       <div
         ref="timelineTrack"
         class="mt-14 flex flex-col gap-5 px-4 sm:px-6 md:w-max md:flex-row md:gap-6 md:px-[max(1rem,calc((100vw-80rem)/2+1.5rem))]"
@@ -252,6 +277,7 @@ onUnmounted(() => {
       </div>
     </section>
 
+    <!-- 03 / Lab Culture：三条价值观卡片，均由 ScrollReveal 包裹做进场动画。 -->
     <section id="culture" class="scroll-mt-28 bg-white py-24 md:py-32" aria-labelledby="culture-title">
       <div class="lab-container">
         <ScrollReveal>
@@ -283,6 +309,7 @@ onUnmounted(() => {
       </div>
     </section>
 
+    <!-- 底部引导条：跳转到 /join 加入方式页面。 -->
     <section class="relative overflow-hidden border-y border-[#0052cc] bg-lab-primary py-20 text-white md:py-24">
       <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/30" aria-hidden="true" />
       <div class="lab-container grid gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">

@@ -1,7 +1,10 @@
 <script setup lang="ts">
+// 全站页脚：实验室简介 + 站内导航 + 联系方式。联系信息读取自 public/data/site.json，
+// 方便后续在不改代码的情况下更新邮箱、GitHub 和地址。
 import { Code2, Mail, MapPin } from "@lucide/vue";
 import { contact } from "../../../public/data/site.json";
 
+// site.json 中邮箱字段可能是占位值 "待确认"，此时不渲染邮箱这一行，避免展示无意义占位符。
 const hasEmail = contact.email && contact.email !== "待确认";
 </script>
 

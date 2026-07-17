@@ -20,12 +20,12 @@
     },
     ".codegraph/codegraph.db": {
       "ipo_ts": 1782565241961,
-      "edit_count": 160,
-      "last_lines": 1547,
-      "last_ts": 1784286306107,
+      "edit_count": 174,
+      "last_lines": 1575,
+      "last_ts": 1784287853888,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "455a3605"
+      "last_content_hash": "af16cbae"
     },
     "docs/实验室官网项目文档.md": {
       "ipo_ts": 1782565274027,
@@ -38,12 +38,12 @@
     },
     ".codegraph/daemon.log": {
       "ipo_ts": 1782565353411,
-      "edit_count": 152,
-      "last_lines": 183,
-      "last_ts": 1784286298690,
+      "edit_count": 166,
+      "last_lines": 198,
+      "last_ts": 1784287832315,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "71dde72f"
+      "last_content_hash": "e7b4810f"
     },
     ".codegraph/codegraph.db-shm": {
       "ipo_ts": 1782565353683,
@@ -128,39 +128,39 @@
     },
     "src/main.ts": {
       "ipo_ts": 1782565683413,
-      "edit_count": 2,
-      "last_lines": 17,
-      "last_ts": 1782566717692,
+      "edit_count": 3,
+      "last_lines": 23,
+      "last_ts": 1784287527869,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "76473a4e"
+      "last_content_hash": "3ada8f05"
     },
     "src/lib/gsap.ts": {
       "ipo_ts": 1782565684679,
-      "edit_count": 3,
-      "last_lines": 54,
-      "last_ts": 1783674501231,
+      "edit_count": 4,
+      "last_lines": 68,
+      "last_ts": 1784287582773,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "fd27351c"
+      "last_content_hash": "f809be63"
     },
     "src/router/index.ts": {
       "ipo_ts": 1782565685996,
-      "edit_count": 4,
-      "last_lines": 40,
-      "last_ts": 1784198559793,
+      "edit_count": 5,
+      "last_lines": 46,
+      "last_ts": 1784287587818,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2c89bd4e"
+      "last_content_hash": "849991f3"
     },
     "src/stores/app.ts": {
       "ipo_ts": 1782565687312,
-      "edit_count": 3,
-      "last_lines": 44,
-      "last_ts": 1782740579312,
+      "edit_count": 4,
+      "last_lines": 56,
+      "last_ts": 1784287593536,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "a1445416"
+      "last_content_hash": "870022f2"
     },
     "src/styles/globals.css": {
       "ipo_ts": 1782565688659,
@@ -173,102 +173,102 @@
     },
     ".codegraph/codegraph.db-wal": {
       "ipo_ts": 1782565690941,
-      "edit_count": 159,
-      "last_lines": 11839,
-      "last_ts": 1784286306036,
+      "edit_count": 174,
+      "last_lines": 10827,
+      "last_ts": 1784287853833,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "b9c42347"
+      "last_content_hash": "21bf6f1b"
     },
     "src/App.vue": {
       "ipo_ts": 1782565755990,
-      "edit_count": 18,
-      "last_lines": 76,
-      "last_ts": 1784199355180,
+      "edit_count": 19,
+      "last_lines": 96,
+      "last_ts": 1784287559643,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2030b87c"
+      "last_content_hash": "bd88bdb3"
     },
     "src/components/layout/SiteHeader.vue": {
       "ipo_ts": 1782565757400,
-      "edit_count": 21,
-      "last_lines": 119,
-      "last_ts": 1784217889628,
+      "edit_count": 22,
+      "last_lines": 127,
+      "last_ts": 1784287624209,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "7d9f8a3a"
+      "last_content_hash": "c14abb0d"
     },
     "src/components/layout/SiteFooter.vue": {
       "ipo_ts": 1782565758206,
-      "edit_count": 10,
-      "last_lines": 56,
-      "last_ts": 1784198556782,
+      "edit_count": 11,
+      "last_lines": 59,
+      "last_ts": 1784287632452,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "81fde29d"
+      "last_content_hash": "ae3572f6"
     },
     "src/components/shared/ThemeToggle.vue": {
       "ipo_ts": 1782565759597,
-      "edit_count": 3,
-      "last_lines": 21,
-      "last_ts": 1782740582278,
+      "edit_count": 4,
+      "last_lines": 23,
+      "last_ts": 1784287645254,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "519f92f6"
+      "last_content_hash": "a294b02"
     },
     "src/components/shared/SectionTitle.vue": {
       "ipo_ts": 1782565760237,
-      "edit_count": 3,
-      "last_lines": 29,
-      "last_ts": 1783675949279,
+      "edit_count": 4,
+      "last_lines": 30,
+      "last_ts": 1784287642279,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "db266c3f"
+      "last_content_hash": "16476348"
     },
     "src/components/ui/BaseButton.vue": {
       "ipo_ts": 1782565761616,
-      "edit_count": 4,
-      "last_lines": 63,
-      "last_ts": 1783674562616,
+      "edit_count": 5,
+      "last_lines": 68,
+      "last_ts": 1784287654728,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "30e76f5a"
+      "last_content_hash": "d7fc6cf6"
     },
     "src/components/ui/BaseCard.vue": {
       "ipo_ts": 1782565762435,
-      "edit_count": 2,
-      "last_lines": 19,
-      "last_ts": 1782740580770,
+      "edit_count": 3,
+      "last_lines": 20,
+      "last_ts": 1784287658513,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "87922d8c"
+      "last_content_hash": "82bd4750"
     },
     "src/components/animations/ScrollReveal.vue": {
       "ipo_ts": 1782565763812,
-      "edit_count": 2,
-      "last_lines": 48,
-      "last_ts": 1783674481900,
+      "edit_count": 3,
+      "last_lines": 56,
+      "last_ts": 1784287638400,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "f5a81fbc"
+      "last_content_hash": "7f5ec4ce"
     },
     "src/data/researchDirections.ts": {
       "ipo_ts": 1782565856672,
-      "edit_count": 3,
-      "last_lines": 56,
-      "last_ts": 1782740493330,
+      "edit_count": 4,
+      "last_lines": 59,
+      "last_ts": 1784287678837,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "618c5191"
+      "last_content_hash": "79f687b6"
     },
     "src/components/home/HeroSection.vue": {
       "ipo_ts": 1782565857975,
-      "edit_count": 48,
-      "last_lines": 486,
-      "last_ts": 1784218541237,
+      "edit_count": 49,
+      "last_lines": 557,
+      "last_ts": 1784287763164,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "37598bb2"
+      "last_content_hash": "8c86adc0"
     },
     "src/components/home/ResearchDirections.vue": {
       "ipo_ts": 1782565858716,
@@ -281,21 +281,21 @@
     },
     "src/pages/Home.vue": {
       "ipo_ts": 1782565860065,
-      "edit_count": 32,
-      "last_lines": 306,
-      "last_ts": 1784199259532,
+      "edit_count": 33,
+      "last_lines": 333,
+      "last_ts": 1784287828659,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "766ae227"
+      "last_content_hash": "dda40367"
     },
     "src/pages/Join.vue": {
       "ipo_ts": 1782565964403,
-      "edit_count": 6,
-      "last_lines": 186,
-      "last_ts": 1782827585593,
+      "edit_count": 7,
+      "last_lines": 196,
+      "last_ts": 1784287850229,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "f62b5766"
+      "last_content_hash": "db20f2a1"
     },
     ".gitignore": {
       "ipo_ts": 1782565990536,
@@ -115059,12 +115059,12 @@
     },
     ".claude/settings.local.json": {
       "ipo_ts": 1784281647111,
-      "edit_count": 16,
-      "last_lines": 24,
-      "last_ts": 1784285777756,
+      "edit_count": 17,
+      "last_lines": 25,
+      "last_ts": 1784287473396,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "76d8849a"
+      "last_content_hash": "56ecaf74"
     },
     ".playwright-mcp/page-2026-07-17T09-58-48-142Z.yml": {
       "ipo_ts": 1784282330304,

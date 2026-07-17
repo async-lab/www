@@ -1,10 +1,12 @@
 <script setup lang="ts">
+// 全站顶部导航栏：桌面端横向导航 + 移动端汉堡菜单，固定在页面顶部，滚动后切换为“紧凑态”样式。
 import { Menu, X } from "@lucide/vue";
 import { onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 import { useAppStore } from "@/stores/app";
 
+// 主导航条目；"关于我们" 指向首页锚点而非独立路由。
 const navItems = [
   { label: "首页", to: "/" },
   { label: "关于我们", to: "/#about" },
@@ -13,6 +15,7 @@ const navItems = [
 
 const route = useRoute();
 const appStore = useAppStore();
+// 滚动超过 24px 后为 true，用于切换导航栏的紧凑视觉样式（见下方 :class 绑定）。
 const isScrolled = ref(false);
 
 function updateScrollState() {
@@ -28,6 +31,7 @@ onUnmounted(() => {
   window.removeEventListener("scroll", updateScrollState);
 });
 
+// 路由切换后自动收起移动端菜单，避免跳转到新页面时菜单仍处于展开状态。
 watch(
   () => route.fullPath,
   () => {
@@ -38,6 +42,7 @@ watch(
 
 <template>
   <header class="fixed left-0 right-0 top-0 z-50 px-3 pt-3 sm:px-4">
+    <!-- 无障碍“跳到主内容”链接：默认视觉隐藏，键盘 Tab 聚焦后可见，帮助屏幕阅读器/键盘用户跳过导航。 -->
     <a
       href="#main-content"
       class="sr-only rounded-lg bg-lab-primary px-4 py-2 text-sm font-semibold text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-20"
@@ -69,6 +74,7 @@ watch(
         </span>
       </RouterLink>
 
+      <!-- 桌面导航：md 及以上断点显示，当前路由高亮（背景 + aria-current）。 -->
       <div class="hidden items-center gap-2 md:flex">
         <RouterLink
           v-for="item in navItems"
@@ -83,6 +89,7 @@ watch(
       </div>
 
       <div class="flex items-center gap-2">
+        <!-- 移动端汉堡菜单开关，展开状态存放在全局 store（appStore.menuOpen）中。 -->
         <button
           type="button"
           class="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-lab-border text-lab-text transition-colors duration-200 hover:border-lab-primary hover:text-lab-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary md:hidden"
@@ -97,6 +104,7 @@ watch(
       </div>
     </nav>
 
+    <!-- 移动端下拉导航面板，复用全局 "page" 过渡效果实现展开/收起动画。 -->
     <Transition name="page">
       <div
         v-if="appStore.menuOpen"

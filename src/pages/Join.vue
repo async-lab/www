@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// 加入我们页面：招募信息 + 四大方向要求（复用 researchDirections 数据）+ 申请流程四步 + FAQ 手风琴。
+// 页面标注了多处“占位内容”，注释中保留说明供后续接入真实数据时参考。
 import { BadgeCheck, ChevronDown, Clock3, MessageSquare, Rocket } from "@lucide/vue";
 import { ref } from "vue";
 
@@ -8,8 +10,10 @@ import BaseButton from "@/components/ui/BaseButton.vue";
 import BaseCard from "@/components/ui/BaseCard.vue";
 import { researchDirections } from "@/data/researchDirections";
 
+// 当前展开的 FAQ 索引；-1 表示全部收起。默认展开第一条（索引 0）。
 const openFaq = ref(0);
 
+// “申请流程”四个步骤，与下方四列布局一一对应。
 const steps = [
   {
     title: "8 周学习",
@@ -33,6 +37,7 @@ const steps = [
   },
 ];
 
+// FAQ 列表，当前内容偏“网站建设说明”性质，正式上线前建议替换为面向申请者的真实问答。
 const faqs = [
   {
     question: "现在是否需要填写真实导师和成员信息？",
@@ -51,6 +56,7 @@ const faqs = [
 
 <template>
   <div class="bg-white pt-32">
+    <!-- 页头：标题 + 联系方式占位按钮（邮箱地址待正式确认后替换）。 -->
     <section class="py-24">
       <div class="lab-container">
         <ScrollReveal>
@@ -68,6 +74,7 @@ const faqs = [
       </div>
     </section>
 
+    <!-- 四大方向招募卡片：数据来自 src/data/researchDirections.ts，与首页研究方向区块共用同一数据源。 -->
     <section class="lab-container py-24">
       <ScrollReveal>
         <SectionTitle
@@ -115,6 +122,7 @@ const faqs = [
       </div>
     </section>
 
+    <!-- 申请流程：四步横向卡片（移动端自动纵向堆叠）。 -->
     <section class="bg-lab-surface py-32">
       <div class="lab-container">
         <ScrollReveal>
@@ -141,6 +149,7 @@ const faqs = [
       </div>
     </section>
 
+    <!-- FAQ：单选手风琴，点击已展开项会再次点击收起（openFaq 置为 -1）。 -->
     <section class="lab-container py-32">
       <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <ScrollReveal>
@@ -157,6 +166,7 @@ const faqs = [
             :key="faq.question"
             class="rounded-2xl border border-lab-border bg-white"
           >
+            <!-- 用真实 <button> + aria-expanded/aria-controls 实现手风琴，保证键盘和屏幕阅读器可用。 -->
             <button
               type="button"
               class="flex w-full cursor-pointer items-center justify-between gap-4 px-6 py-6 text-left font-semibold text-lab-text focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
