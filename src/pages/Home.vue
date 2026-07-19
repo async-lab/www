@@ -84,21 +84,25 @@ const milestones = [
     year: "2013",
     title: "IOTU 实验室成立",
     description: "团队从嵌入式开发起步，为热爱学习与创造的同学提供开发实践空间。",
+    image: '/logo/透明底图标.png',
   },
   {
     year: "Growth",
     title: "多方向团队成形",
     description: "随着实验室发展，逐步拓展到 Web 前端、Java / Go 后端、C++ 开发与移动端等方向。",
+    image: '',
   },
   {
     year: "Async",
     title: "异步理念形成",
     description: "成员拥有不同方向、目标与学习方式，在共同框架下互相追赶、交替前行。",
+    image: '/logo/黑色背景透明.svg',
   },
   {
     year: "Together",
     title: "学习、项目与交流",
     description: "在双中心 B413 一起学习、做项目、交流技术，让个人积累持续汇入团队成长。",
+    image: '',
   },
 ];
 
@@ -273,7 +277,7 @@ onUnmounted(() => {
             class="absolute inset-x-8 bottom-8 h-px origin-left scale-x-25 bg-lab-primary transition-transform duration-300 group-hover:scale-x-100"
             aria-hidden="true"
           />
-          <img src="" alt="">
+          <img :src="milestone.image" :alt="milestone.title">
         </article>
       </div>
     </section>

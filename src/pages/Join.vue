@@ -58,12 +58,12 @@ const faqs = [
   <div class="bg-white pt-32">
     <!-- 页头：标题 + 联系方式占位按钮（邮箱地址待正式确认后替换）。 -->
     <section class="py-24">
-      <div class="lab-container">
+      <div class="lab-container flex">
         <ScrollReveal>
           <SectionTitle
-            eyebrow="Join Us"
-            title="加入异步开发实验室"
-            description="这里先按文档搭好招生信息、申请流程和 FAQ。具体人数、邮箱、地点确认后，可以替换占位内容。"
+          eyebrow="Join Us"
+          title="加入异步开发实验室"
+          description="这里先按文档搭好招生信息、申请流程和 FAQ。具体人数、邮箱、地点确认后，可以替换占位内容。"
           />
           <div class="mt-9">
             <BaseButton as="a" href="mailto:example@example.com" size="lg">
@@ -71,6 +71,7 @@ const faqs = [
             </BaseButton>
           </div>
         </ScrollReveal>
+        <img src="/images/team/qrcode_1784446912550.jpg" alt="实验室 Logo" class="mx-auto mt-12 h-auto w-1/5" />
       </div>
     </section>
 
@@ -93,7 +94,7 @@ const faqs = [
                 <h3 class="mt-2 text-2xl font-semibold">{{ direction.title }}</h3>
               </div>
               <div
-                class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-lab-border bg-lab-surface text-lab-primary"
+                class="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-lab-border bg-lab-surface text-lab-primary"
               >
                 <component :is="direction.icon" class="h-6 w-6" aria-hidden="true" />
               </div>
@@ -136,7 +137,7 @@ const faqs = [
 
         <div class="mt-16 grid gap-8 md:grid-cols-4">
           <ScrollReveal v-for="(step, index) in steps" :key="step.title">
-            <div class="relative h-full rounded-3xl border border-lab-border bg-white p-8">
+            <div class="relative h-full rounded-xl border border-lab-border bg-white p-8">
               <div class="mb-8 flex items-center justify-between">
                 <span class="font-mono text-xs text-lab-primary">0{{ index + 1 }}</span>
                 <component :is="step.icon" class="h-6 w-6 text-lab-primary" aria-hidden="true" />

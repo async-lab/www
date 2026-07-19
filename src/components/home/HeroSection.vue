@@ -4,15 +4,24 @@
 import { ArrowDown, ArrowRight } from "@lucide/vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
+import AnimatedLogo from "@/components/shared/AnimatedLogo.vue";
+import LogoMotionExamples from "@/components/shared/LogoMotionExamples.vue";
 import BaseButton from "@/components/ui/BaseButton.vue";
 import { gsap } from "@/lib/gsap";
+import { useAppStore } from "@/stores/app";
 
 const hero = ref<HTMLElement | null>(null);
 const particleCanvas = ref<HTMLCanvasElement | null>(null);
 const typedText = ref<HTMLElement | null>(null);
 const typingCaret = ref<HTMLElement | null>(null);
+const splashLogo = ref<HTMLElement | null>(null);
+const showSplashLogo = ref(true);
 const title = "异步开发实验室";
 const logoSrc = "/logo/白色背景_透明.svg";
+const appStore = useAppStore();
+const splashDuration = 1.5;
+const logoTransferDuration = 0.42;
+const heroContentDelay = 0.35;
 
 // 单个粒子（光点）的运动状态。
 type SparkParticle = {
@@ -366,10 +375,27 @@ function finalizeHeroEntrance() {
       ".hero-kicker",
       ".hero-title-text",
       ".hero-body",
+      ".hero-examples",
       ".hero-scroll-cue",
     ],
     { clearProps: "willChange,transform,opacity,visibility" },
   );
+}
+
+function getLogoTransferTarget() {
+  const source = splashLogo.value;
+  const target = document.querySelector<HTMLElement>("[data-header-logo]");
+  if (!source || !target) return { x: 0, y: -24, scale: 0.16 };
+
+  const sourceRect = source.getBoundingClientRect();
+  const targetRect = target.getBoundingClientRect();
+  const scale = Math.min(targetRect.width / sourceRect.width, targetRect.height / sourceRect.height);
+
+  return {
+    x: targetRect.left + targetRect.width / 2 - (sourceRect.left + sourceRect.width / 2),
+    y: targetRect.top + targetRect.height / 2 - (sourceRect.top + sourceRect.height / 2),
+    scale,
+  };
 }
 
 onMounted(() => {
@@ -380,10 +406,12 @@ onMounted(() => {
 
   ctx = gsap.context(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    startParticleFlow(!reduceMotion);
 
     if (reduceMotion) {
       // 减少动态效果：跳过入场时间线，直接展示最终状态（含完整标题文字）。
+      showSplashLogo.value = false;
+      appStore.setHeroIntroComplete(true);
+      startParticleFlow(false);
       finalizeHeroEntrance();
       return;
     }
@@ -394,9 +422,11 @@ onMounted(() => {
       ".hero-kicker",
       ".hero-title-text",
       ".hero-body",
+      ".hero-examples",
       ".hero-scroll-cue",
     ];
     gsap.set(animatedElements, { willChange: "transform,opacity" });
+    gsap.set(animatedElements, { autoAlpha: 0 });
 
     // 首屏入场时间线：背景水印缩放淡入、粒子层横向展开、标签/标题/正文/滚动提示依次错开淡入上移。
     const timeline = gsap.timeline({
@@ -404,49 +434,84 @@ onMounted(() => {
       onComplete: finalizeHeroEntrance,
     });
 
+    const hasPlayedIntro = appStore.isHeroIntroComplete;
+    const contentStart = hasPlayedIntro
+      ? 0
+      : splashDuration + logoTransferDuration + heroContentDelay;
+
+    if (hasPlayedIntro) {
+      showSplashLogo.value = false;
+    } else {
+      timeline
+        .add(() => appStore.setHeroIntroComplete(true), splashDuration)
+        .to(
+          splashLogo.value,
+          {
+            autoAlpha: 0,
+            duration: logoTransferDuration,
+            ease: "power2.inOut",
+            scale: () => getLogoTransferTarget().scale,
+            transformOrigin: "center center",
+            x: () => getLogoTransferTarget().x,
+            y: () => getLogoTransferTarget().y,
+          },
+          splashDuration,
+        )
+        .add(() => {
+          showSplashLogo.value = false;
+        }, splashDuration + logoTransferDuration);
+    }
+
     timeline
+      .add(() => startParticleFlow(true), contentStart)
       .fromTo(
         ".hero-background-art",
         { autoAlpha: 0, scale: 0.94 },
         { autoAlpha: 1, scale: 1, duration: 1.12 },
-        0,
+        contentStart,
       )
       .fromTo(
         ".hero-particles",
         { autoAlpha: 0, scaleX: 0.96, transformOrigin: "right center" },
         { autoAlpha: 1, scaleX: 1, duration: 0.84 },
-        0,
+        contentStart,
       )
       .fromTo(
         ".hero-kicker",
         { autoAlpha: 0, y: 14 },
         { autoAlpha: 1, y: 0, duration: 0.48 },
-        0.12,
+        contentStart + 0.08,
       )
-      // 时间线进行到 0.86s 时启动打字机效果，与标题容器淡入时机（0.84s）基本同步。
-      .add(startTypewriter, 0.86)
+      // Logo 离场后等待 350ms，再启动正文打字机和其余内容。
+      .add(startTypewriter, contentStart)
       .fromTo(
         ".hero-title-text",
         { autoAlpha: 0, y: 28 },
         { autoAlpha: 1, y: 0, duration: 0.76 },
-        0.84,
+        contentStart,
       )
       .fromTo(
         ".hero-body",
         { autoAlpha: 0, y: 22 },
         { autoAlpha: 1, y: 0, duration: 0.68 },
-        1.12,
+        contentStart + 0.22,
+      )
+      .fromTo(
+        ".hero-examples",
+        { autoAlpha: 0, y: 24 },
+        { autoAlpha: 1, y: 0, duration: 0.68 },
+        contentStart + 0.36,
       )
       .fromTo(
         ".hero-scroll-cue",
         { autoAlpha: 0, y: -10 },
         { autoAlpha: 1, y: 0, duration: 0.48 },
-        1.34,
+        contentStart + 0.54,
       );
 
-    // 兜底定时器：若因某些原因 onComplete 未按预期触发（如时间线被中断），3.2s 后强制收尾，
-    // 保证标题文字和交互元素最终一定会以完整可用状态呈现。
-    heroFallbackTimer = window.setTimeout(finalizeHeroEntrance, 3200);
+    // 兜底定时器：若因某些原因 onComplete 未按预期触发（如时间线被中断），
+    // 按完整开场时间线强制收尾，保证标题文字和交互元素最终一定会以完整可用状态呈现。
+    heroFallbackTimer = window.setTimeout(finalizeHeroEntrance, Math.ceil((contentStart + 1.8) * 1000));
   }, hero.value);
 });
 
@@ -461,6 +526,16 @@ onUnmounted(() => {
 
 <template>
   <section ref="hero" class="relative min-h-[100svh] overflow-hidden bg-white" aria-labelledby="hero-title">
+    <div
+      v-if="showSplashLogo"
+      class="pointer-events-none absolute inset-0 z-[60] grid place-items-center bg-[#f2f6fb]"
+      aria-hidden="true"
+    >
+      <div ref="splashLogo" class="w-60 sm:w-72 md:w-80">
+        <AnimatedLogo play />
+      </div>
+    </div>
+
     <!-- 背景装饰层：右侧/居中大 Logo 水印 + 粒子流动 Canvas，均为纯装饰，不参与交互（pointer-events-none）。 -->
     <div class="hero-ribbon pointer-events-none absolute inset-0 z-0 bg-white" aria-hidden="true">
       <div
@@ -532,8 +607,6 @@ onUnmounted(() => {
             </div>
           </div>
         </div>
-
-        <div class="hidden lg:block" aria-hidden="true" />
       </div>
     </div>
 

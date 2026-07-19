@@ -24,14 +24,16 @@ function applyTheme(theme: Theme) {
 }
 
 /**
- * 全局应用状态：当前只管理两件事——
+ * 全局应用状态：当前管理三件事——
  * 1. 主题（theme，目前恒为 light）；
  * 2. 移动端导航菜单的展开状态（menuOpen），由 SiteHeader 的汉堡按钮控制。
+ * 3. 首页品牌开场是否结束，用于衔接 Hero 与 Header 左侧 Logo。
  */
 export const useAppStore = defineStore("app", {
   state: () => ({
     theme: "light" as Theme,
     menuOpen: false,
+    isHeroIntroComplete: false,
   }),
   actions: {
     // 应用挂载时调用一次，恢复主题偏好并应用到 DOM。
@@ -51,6 +53,9 @@ export const useAppStore = defineStore("app", {
     },
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
+    },
+    setHeroIntroComplete(complete: boolean) {
+      this.isHeroIntroComplete = complete;
     },
   },
 });

@@ -20,12 +20,12 @@
     },
     ".codegraph/codegraph.db": {
       "ipo_ts": 1782565241961,
-      "edit_count": 174,
-      "last_lines": 1575,
-      "last_ts": 1784287853888,
+      "edit_count": 199,
+      "last_lines": 2427,
+      "last_ts": 1784453328528,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "af16cbae"
+      "last_content_hash": "b5ee1963"
     },
     "docs/实验室官网项目文档.md": {
       "ipo_ts": 1782565274027,
@@ -38,30 +38,30 @@
     },
     ".codegraph/daemon.log": {
       "ipo_ts": 1782565353411,
-      "edit_count": 166,
-      "last_lines": 198,
-      "last_ts": 1784287832315,
+      "edit_count": 184,
+      "last_lines": 239,
+      "last_ts": 1784453328603,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "e7b4810f"
+      "last_content_hash": "20172500"
     },
     ".codegraph/codegraph.db-shm": {
       "ipo_ts": 1782565353683,
-      "edit_count": 8,
-      "last_lines": 4,
-      "last_ts": 1784280131559,
+      "edit_count": 9,
+      "last_lines": 1,
+      "last_ts": 1784447830575,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "be17df5c"
+      "last_content_hash": "83f98b10"
     },
     ".codegraph/daemon.pid": {
       "ipo_ts": 1782565353693,
-      "edit_count": 9,
+      "edit_count": 10,
       "last_lines": 6,
-      "last_ts": 1784280131505,
+      "last_ts": 1784447830706,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "e35f58a1"
+      "last_content_hash": "b3969c78"
     },
     "package.json": {
       "ipo_ts": 1782565677227,
@@ -155,12 +155,12 @@
     },
     "src/stores/app.ts": {
       "ipo_ts": 1782565687312,
-      "edit_count": 4,
-      "last_lines": 56,
-      "last_ts": 1784287593536,
+      "edit_count": 6,
+      "last_lines": 61,
+      "last_ts": 1784452962960,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "870022f2"
+      "last_content_hash": "2624a6fe"
     },
     "src/styles/globals.css": {
       "ipo_ts": 1782565688659,
@@ -173,12 +173,12 @@
     },
     ".codegraph/codegraph.db-wal": {
       "ipo_ts": 1782565690941,
-      "edit_count": 174,
-      "last_lines": 10827,
-      "last_ts": 1784287853833,
+      "edit_count": 198,
+      "last_lines": 9656,
+      "last_ts": 1784453328464,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "21bf6f1b"
+      "last_content_hash": "715cba09"
     },
     "src/App.vue": {
       "ipo_ts": 1782565755990,
@@ -191,12 +191,12 @@
     },
     "src/components/layout/SiteHeader.vue": {
       "ipo_ts": 1782565757400,
-      "edit_count": 26,
-      "last_lines": 129,
-      "last_ts": 1784367272868,
+      "edit_count": 29,
+      "last_lines": 142,
+      "last_ts": 1784453058279,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "1c9c384a"
+      "last_content_hash": "ddf22c79"
     },
     "src/components/layout/SiteFooter.vue": {
       "ipo_ts": 1782565758206,
@@ -236,12 +236,12 @@
     },
     "src/components/ui/BaseCard.vue": {
       "ipo_ts": 1782565762435,
-      "edit_count": 3,
+      "edit_count": 6,
       "last_lines": 20,
-      "last_ts": 1784287658513,
+      "last_ts": 1784447194979,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "82bd4750"
+      "last_content_hash": "95b9a4c6"
     },
     "src/components/animations/ScrollReveal.vue": {
       "ipo_ts": 1782565763812,
@@ -263,12 +263,12 @@
     },
     "src/components/home/HeroSection.vue": {
       "ipo_ts": 1782565857975,
-      "edit_count": 50,
-      "last_lines": 557,
-      "last_ts": 1784354261698,
+      "edit_count": 53,
+      "last_lines": 630,
+      "last_ts": 1784453325083,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "5d965d06"
+      "last_content_hash": "ca0a1423"
     },
     "src/components/home/ResearchDirections.vue": {
       "ipo_ts": 1782565858716,
@@ -281,30 +281,30 @@
     },
     "src/pages/Home.vue": {
       "ipo_ts": 1782565860065,
-      "edit_count": 44,
-      "last_lines": 334,
-      "last_ts": 1784368392732,
+      "edit_count": 53,
+      "last_lines": 338,
+      "last_ts": 1784439806562,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "344df77a"
+      "last_content_hash": "38ed3754"
     },
     "src/pages/Join.vue": {
       "ipo_ts": 1782565964403,
-      "edit_count": 11,
-      "last_lines": 196,
-      "last_ts": 1784368192781,
+      "edit_count": 29,
+      "last_lines": 197,
+      "last_ts": 1784447257459,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "36285a50"
+      "last_content_hash": "935995fc"
     },
     ".gitignore": {
       "ipo_ts": 1782565990536,
-      "edit_count": 10,
-      "last_lines": 17,
-      "last_ts": 1784286471502,
+      "edit_count": 12,
+      "last_lines": 19,
+      "last_ts": 1784450387749,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2be76e11"
+      "last_content_hash": "60d365cf"
     },
     "README.md": {
       "ipo_ts": 1782565991370,
@@ -114464,27 +114464,27 @@
     },
     "dist/index.html": {
       "ipo_ts": 1782566719155,
-      "edit_count": 25,
+      "edit_count": 28,
       "last_lines": 24,
-      "last_ts": 1784278705202,
+      "last_ts": 1784453070246,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "2b027db0"
+      "last_content_hash": "db7b25b8"
     },
     "public/logo/黑色背景透明.svg": {
       "ipo_ts": 1782823049155,
-      "edit_count": 2,
+      "edit_count": 3,
       "last_lines": 1,
-      "last_ts": 1782823051437,
+      "last_ts": 1784451429874,
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "1334d18"
     },
     "public/logo/白色背景_透明.svg": {
       "ipo_ts": 1782823049205,
-      "edit_count": 2,
+      "edit_count": 4,
       "last_lines": 1,
-      "last_ts": 1782823051389,
+      "last_ts": 1784451443383,
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "afd1d4f8"
@@ -114794,6 +114794,1401 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "fe4b5ba"
+    },
+    ".codegraph/codegraph.lock": {
+      "ipo_ts": 1784439490708,
+      "edit_count": 2,
+      "last_lines": 1,
+      "last_ts": 1784447830637,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "320daf0"
+    },
+    "public/logo/透明底图标.png": {
+      "ipo_ts": 1784439635889,
+      "edit_count": 2,
+      "last_lines": 45,
+      "last_ts": 1784439638112,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fd51209"
+    },
+    "public/images/team/qrcode_1784446844194.jpg": {
+      "ipo_ts": 1784446867931,
+      "edit_count": 2,
+      "last_lines": 1869,
+      "last_ts": 1784446870124,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1ef91f83"
+    },
+    "public/images/team/qrcode_1784446912550.jpg": {
+      "ipo_ts": 1784446922921,
+      "edit_count": 2,
+      "last_lines": 1702,
+      "last_ts": 1784446925120,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ea08d88a"
+    },
+    "motion/黑色背景透明.svg": {
+      "ipo_ts": 1784448150750,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784448150750,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1334d18"
+    },
+    "motion/outputs/fit_work/prepare_logo.py": {
+      "ipo_ts": 1784448392739,
+      "edit_count": 4,
+      "last_lines": 95,
+      "last_ts": 1784450421723,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "923f56bf"
+    },
+    "motion/outputs/logo.svg": {
+      "ipo_ts": 1784448442090,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784448442090,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5f9171e0"
+    },
+    "motion/outputs/motion.css": {
+      "ipo_ts": 1784448571534,
+      "edit_count": 3,
+      "last_lines": 246,
+      "last_ts": 1784449854833,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a17b4d94"
+    },
+    "motion/outputs/motion_spec.md": {
+      "ipo_ts": 1784448617253,
+      "edit_count": 3,
+      "last_lines": 56,
+      "last_ts": 1784451114828,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4025d0d4"
+    },
+    "motion/outputs/logo_motion.html": {
+      "ipo_ts": 1784448625912,
+      "edit_count": 11,
+      "last_lines": 801,
+      "last_ts": 1784451199300,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "dbc89a07"
+    },
+    "motion/outputs/motion_frames/frame_000000ms.png": {
+      "ipo_ts": 1784449210114,
+      "edit_count": 2,
+      "last_lines": 15,
+      "last_ts": 1784449598228,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ea2c8847"
+    },
+    "motion/outputs/motion_frames/frame_000300ms.png": {
+      "ipo_ts": 1784449210317,
+      "edit_count": 2,
+      "last_lines": 15,
+      "last_ts": 1784449598302,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ea2c8847"
+    },
+    "motion/outputs/motion_frames/frame_000600ms.png": {
+      "ipo_ts": 1784449210454,
+      "edit_count": 2,
+      "last_lines": 120,
+      "last_ts": 1784449598379,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fb8a6cdc"
+    },
+    "motion/outputs/motion_frames/frame_000750ms.png": {
+      "ipo_ts": 1784449210618,
+      "edit_count": 2,
+      "last_lines": 111,
+      "last_ts": 1784449598451,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d91772c8"
+    },
+    "motion/outputs/motion_frames/frame_000900ms.png": {
+      "ipo_ts": 1784449210768,
+      "edit_count": 2,
+      "last_lines": 111,
+      "last_ts": 1784449598521,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "484b8012"
+    },
+    "motion/outputs/motion_frames/frame_001050ms.png": {
+      "ipo_ts": 1784449210917,
+      "edit_count": 2,
+      "last_lines": 114,
+      "last_ts": 1784449598598,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "f8f4115a"
+    },
+    "motion/outputs/motion_frames/frame_001200ms.png": {
+      "ipo_ts": 1784449211056,
+      "edit_count": 2,
+      "last_lines": 122,
+      "last_ts": 1784449598684,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9a74bd52"
+    },
+    "motion/outputs/motion_frames/frame_001350ms.png": {
+      "ipo_ts": 1784449211198,
+      "edit_count": 2,
+      "last_lines": 122,
+      "last_ts": 1784449598759,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d91d27df"
+    },
+    "motion/outputs/motion_frames/frame_001500ms.png": {
+      "ipo_ts": 1784449211341,
+      "edit_count": 2,
+      "last_lines": 123,
+      "last_ts": 1784449598839,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fb2279b5"
+    },
+    "motion/outputs/final_render.png": {
+      "ipo_ts": 1784449211518,
+      "edit_count": 2,
+      "last_lines": 123,
+      "last_ts": 1784449598050,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fb2279b5"
+    },
+    "motion/outputs/html_render.png": {
+      "ipo_ts": 1784449215275,
+      "edit_count": 2,
+      "last_lines": 447,
+      "last_ts": 1784449598131,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7374900"
+    },
+    "motion/outputs/fit_work/motion_strip.html": {
+      "ipo_ts": 1784449290854,
+      "edit_count": 3,
+      "last_lines": 22,
+      "last_ts": 1784449354939,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3bca49c5"
+    },
+    "motion/outputs/fit_work/geometry_strip.html": {
+      "ipo_ts": 1784449290923,
+      "edit_count": 2,
+      "last_lines": 16,
+      "last_ts": 1784449315944,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c547ea36"
+    },
+    "motion/outputs/motion_strip.png": {
+      "ipo_ts": 1784449331348,
+      "edit_count": 3,
+      "last_lines": 1046,
+      "last_ts": 1784449598932,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b18df6e7"
+    },
+    "motion/outputs/overlay_progress_strip.png": {
+      "ipo_ts": 1784449331592,
+      "edit_count": 2,
+      "last_lines": 410,
+      "last_ts": 1784449599021,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "f20f1aa2"
+    },
+    "motion/outputs/fit_work/svg_path_audit.json": {
+      "ipo_ts": 1784449389975,
+      "edit_count": 1,
+      "last_lines": 469,
+      "last_ts": 1784449389975,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a0a5f55a"
+    },
+    "motion/outputs/fit_work/logo_audited.svg": {
+      "ipo_ts": 1784449390044,
+      "edit_count": 1,
+      "last_lines": 847,
+      "last_ts": 1784449390044,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1b121ce6"
+    },
+    "motion/outputs/fit_work/final_frame_contract.json": {
+      "ipo_ts": 1784449619320,
+      "edit_count": 1,
+      "last_lines": 8,
+      "last_ts": 1784449619320,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a70654af"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0500.jpg": {
+      "ipo_ts": 1784449662670,
+      "edit_count": 1,
+      "last_lines": 22,
+      "last_ts": 1784449662670,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1df1d7c3"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0510.jpg": {
+      "ipo_ts": 1784449662840,
+      "edit_count": 1,
+      "last_lines": 25,
+      "last_ts": 1784449662840,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "892233c3"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0520.jpg": {
+      "ipo_ts": 1784449662979,
+      "edit_count": 1,
+      "last_lines": 19,
+      "last_ts": 1784449662979,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3b470400"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0530.jpg": {
+      "ipo_ts": 1784449663119,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784449663119,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2d7e20a1"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0540.jpg": {
+      "ipo_ts": 1784449663250,
+      "edit_count": 1,
+      "last_lines": 28,
+      "last_ts": 1784449663250,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1d20e40d"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0550.jpg": {
+      "ipo_ts": 1784449663396,
+      "edit_count": 1,
+      "last_lines": 23,
+      "last_ts": 1784449663396,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9a567a89"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0560.jpg": {
+      "ipo_ts": 1784449663534,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784449663534,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3d4e3f45"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0570.jpg": {
+      "ipo_ts": 1784449663677,
+      "edit_count": 1,
+      "last_lines": 36,
+      "last_ts": 1784449663677,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "cff9dab1"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0580.jpg": {
+      "ipo_ts": 1784449663821,
+      "edit_count": 1,
+      "last_lines": 25,
+      "last_ts": 1784449663821,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9b990291"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0590.jpg": {
+      "ipo_ts": 1784449663980,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784449663980,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "155e952e"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0600.jpg": {
+      "ipo_ts": 1784449664144,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784449664144,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ea4d43b3"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0610.jpg": {
+      "ipo_ts": 1784449664313,
+      "edit_count": 1,
+      "last_lines": 34,
+      "last_ts": 1784449664313,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "6db10a3a"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0620.jpg": {
+      "ipo_ts": 1784449664486,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784449664486,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fbc4dc36"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0630.jpg": {
+      "ipo_ts": 1784449664749,
+      "edit_count": 1,
+      "last_lines": 28,
+      "last_ts": 1784449664749,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "575c4780"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0640.jpg": {
+      "ipo_ts": 1784449664919,
+      "edit_count": 1,
+      "last_lines": 29,
+      "last_ts": 1784449664919,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3e7d0db8"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0650.jpg": {
+      "ipo_ts": 1784449665210,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784449665210,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c07654f5"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0660.jpg": {
+      "ipo_ts": 1784449665341,
+      "edit_count": 1,
+      "last_lines": 35,
+      "last_ts": 1784449665341,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7d37c28b"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0670.jpg": {
+      "ipo_ts": 1784449665482,
+      "edit_count": 1,
+      "last_lines": 34,
+      "last_ts": 1784449665482,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8224d831"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0690.jpg": {
+      "ipo_ts": 1784449665898,
+      "edit_count": 1,
+      "last_lines": 33,
+      "last_ts": 1784449665898,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4e840b39"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0700.jpg": {
+      "ipo_ts": 1784449666056,
+      "edit_count": 1,
+      "last_lines": 34,
+      "last_ts": 1784449666056,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7477634e"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0710.jpg": {
+      "ipo_ts": 1784449666214,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784449666214,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c07654f5"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0720.jpg": {
+      "ipo_ts": 1784449666386,
+      "edit_count": 1,
+      "last_lines": 35,
+      "last_ts": 1784449666386,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8ff1657e"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0730.jpg": {
+      "ipo_ts": 1784449666555,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784449666555,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c014e1b1"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0740.jpg": {
+      "ipo_ts": 1784449666723,
+      "edit_count": 1,
+      "last_lines": 31,
+      "last_ts": 1784449666723,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "66373918"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0750.jpg": {
+      "ipo_ts": 1784449667180,
+      "edit_count": 1,
+      "last_lines": 24,
+      "last_ts": 1784449667180,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3551283"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0760.jpg": {
+      "ipo_ts": 1784449667250,
+      "edit_count": 1,
+      "last_lines": 23,
+      "last_ts": 1784449667250,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "70f04f74"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0770.jpg": {
+      "ipo_ts": 1784449667320,
+      "edit_count": 1,
+      "last_lines": 35,
+      "last_ts": 1784449667320,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4d9b3d5f"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0790.jpg": {
+      "ipo_ts": 1784449667557,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784449667557,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c07654f5"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0800.jpg": {
+      "ipo_ts": 1784449667697,
+      "edit_count": 1,
+      "last_lines": 23,
+      "last_ts": 1784449667697,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1d09716c"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0820.jpg": {
+      "ipo_ts": 1784449668124,
+      "edit_count": 1,
+      "last_lines": 31,
+      "last_ts": 1784449668124,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "749a8e4e"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0830.jpg": {
+      "ipo_ts": 1784449668461,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784449668461,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "db6844a7"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0840.jpg": {
+      "ipo_ts": 1784449668630,
+      "edit_count": 1,
+      "last_lines": 44,
+      "last_ts": 1784449668630,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "36dda276"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0850.jpg": {
+      "ipo_ts": 1784449668796,
+      "edit_count": 1,
+      "last_lines": 38,
+      "last_ts": 1784449668796,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "86252f85"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0860.jpg": {
+      "ipo_ts": 1784449668971,
+      "edit_count": 1,
+      "last_lines": 38,
+      "last_ts": 1784449668971,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d0037f51"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0870.jpg": {
+      "ipo_ts": 1784449669120,
+      "edit_count": 1,
+      "last_lines": 30,
+      "last_ts": 1784449669120,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5e0cf7c9"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0880.jpg": {
+      "ipo_ts": 1784449669383,
+      "edit_count": 1,
+      "last_lines": 28,
+      "last_ts": 1784449669383,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b41a45a6"
+    },
+    "motion/outputs/fit_work/ink_sweep_frames/frame_0900.jpg": {
+      "ipo_ts": 1784449669697,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784449669697,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c07654f5"
+    },
+    "motion/outputs/fit_work/ink_sweep.json": {
+      "ipo_ts": 1784449691886,
+      "edit_count": 1,
+      "last_lines": 233,
+      "last_ts": 1784449691886,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5aa02d67"
+    },
+    "motion/outputs/fit_work/continuity_sweep.json": {
+      "ipo_ts": 1784449717094,
+      "edit_count": 1,
+      "last_lines": 173,
+      "last_ts": 1784449717094,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ade75d79"
+    },
+    "motion/outputs/fit_work/easing_probe.json": {
+      "ipo_ts": 1784449750120,
+      "edit_count": 1,
+      "last_lines": 203,
+      "last_ts": 1784449750120,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7db609a4"
+    },
+    "motion/outputs/fit_work/__pycache__/prepare_logo.cpython-311.pyc": {
+      "ipo_ts": 1784449941457,
+      "edit_count": 1,
+      "last_lines": 29,
+      "last_ts": 1784449941457,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7aeab76a"
+    },
+    "motion/白色背景_透明.svg": {
+      "ipo_ts": 1784450307400,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784450307400,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "afd1d4f8"
+    },
+    "motion/outputs_white/logo.svg": {
+      "ipo_ts": 1784450471821,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784450471821,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b6c86b02"
+    },
+    "motion/outputs_white/motion.css": {
+      "ipo_ts": 1784450483473,
+      "edit_count": 2,
+      "last_lines": 246,
+      "last_ts": 1784450519382,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d63c73e2"
+    },
+    "motion/outputs_white/logo_motion.html": {
+      "ipo_ts": 1784450532048,
+      "edit_count": 4,
+      "last_lines": 808,
+      "last_ts": 1784451199373,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d5cf682d"
+    },
+    "motion/outputs_white/motion_spec.md": {
+      "ipo_ts": 1784450609786,
+      "edit_count": 2,
+      "last_lines": 42,
+      "last_ts": 1784451093515,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "f8e6bec9"
+    },
+    "motion/outputs_white/motion_frames/frame_000000ms.png": {
+      "ipo_ts": 1784450683605,
+      "edit_count": 2,
+      "last_lines": 30,
+      "last_ts": 1784450748887,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fe0f6b44"
+    },
+    "motion/outputs_white/motion_frames/frame_000300ms.png": {
+      "ipo_ts": 1784450683822,
+      "edit_count": 2,
+      "last_lines": 30,
+      "last_ts": 1784450748955,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fe0f6b44"
+    },
+    "motion/outputs_white/motion_frames/frame_000600ms.png": {
+      "ipo_ts": 1784450683992,
+      "edit_count": 2,
+      "last_lines": 139,
+      "last_ts": 1784450749017,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "17199fca"
+    },
+    "motion/outputs_white/motion_frames/frame_000750ms.png": {
+      "ipo_ts": 1784450684111,
+      "edit_count": 2,
+      "last_lines": 111,
+      "last_ts": 1784450749084,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fff83746"
+    },
+    "motion/outputs_white/motion_frames/frame_000900ms.png": {
+      "ipo_ts": 1784450684289,
+      "edit_count": 2,
+      "last_lines": 132,
+      "last_ts": 1784450749148,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c08ee4ae"
+    },
+    "motion/outputs_white/motion_frames/frame_001050ms.png": {
+      "ipo_ts": 1784450684428,
+      "edit_count": 2,
+      "last_lines": 117,
+      "last_ts": 1784450749212,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "9df018ad"
+    },
+    "motion/outputs_white/motion_frames/frame_001200ms.png": {
+      "ipo_ts": 1784450684590,
+      "edit_count": 2,
+      "last_lines": 123,
+      "last_ts": 1784450749276,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "bdc140ca"
+    },
+    "motion/outputs_white/motion_frames/frame_001350ms.png": {
+      "ipo_ts": 1784450684735,
+      "edit_count": 2,
+      "last_lines": 130,
+      "last_ts": 1784450749334,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ca08fddd"
+    },
+    "motion/outputs_white/motion_frames/frame_001500ms.png": {
+      "ipo_ts": 1784450684907,
+      "edit_count": 2,
+      "last_lines": 110,
+      "last_ts": 1784450749394,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3d0fcc35"
+    },
+    "motion/outputs_white/final_render.png": {
+      "ipo_ts": 1784450685057,
+      "edit_count": 2,
+      "last_lines": 110,
+      "last_ts": 1784450748749,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "3d0fcc35"
+    },
+    "motion/outputs_white/html_render.png": {
+      "ipo_ts": 1784450688743,
+      "edit_count": 2,
+      "last_lines": 445,
+      "last_ts": 1784450748819,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "6fd34c16"
+    },
+    "motion/outputs_white/fit_work/motion_strip.html": {
+      "ipo_ts": 1784450718443,
+      "edit_count": 1,
+      "last_lines": 22,
+      "last_ts": 1784450718443,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d7de4591"
+    },
+    "motion/outputs_white/fit_work/geometry_strip.html": {
+      "ipo_ts": 1784450718498,
+      "edit_count": 1,
+      "last_lines": 16,
+      "last_ts": 1784450718498,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c08c3c48"
+    },
+    "motion/outputs_white/motion_strip.png": {
+      "ipo_ts": 1784450734140,
+      "edit_count": 2,
+      "last_lines": 1290,
+      "last_ts": 1784450749472,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "e990c76f"
+    },
+    "motion/outputs_white/overlay_progress_strip.png": {
+      "ipo_ts": 1784450734402,
+      "edit_count": 2,
+      "last_lines": 423,
+      "last_ts": 1784450749541,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c30153d5"
+    },
+    "motion/outputs_white/fit_work/svg_path_audit.json": {
+      "ipo_ts": 1784450779663,
+      "edit_count": 1,
+      "last_lines": 469,
+      "last_ts": 1784450779663,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7ebccc04"
+    },
+    "motion/outputs_white/fit_work/logo_audited.svg": {
+      "ipo_ts": 1784450779717,
+      "edit_count": 1,
+      "last_lines": 847,
+      "last_ts": 1784450779717,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1b121ce6"
+    },
+    "motion/outputs_white/fit_work/final_frame_contract.json": {
+      "ipo_ts": 1784450799300,
+      "edit_count": 1,
+      "last_lines": 8,
+      "last_ts": 1784450799300,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a70654af"
+    },
+    "motion/outputs_white/fit_work/easing_probe.json": {
+      "ipo_ts": 1784450852754,
+      "edit_count": 1,
+      "last_lines": 203,
+      "last_ts": 1784450852754,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7db609a4"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0500.jpg": {
+      "ipo_ts": 1784450874493,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784450874493,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "46fafaac"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0510.jpg": {
+      "ipo_ts": 1784450874672,
+      "edit_count": 1,
+      "last_lines": 31,
+      "last_ts": 1784450874672,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c234cc4f"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0520.jpg": {
+      "ipo_ts": 1784450874815,
+      "edit_count": 1,
+      "last_lines": 44,
+      "last_ts": 1784450874815,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "75790944"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0530.jpg": {
+      "ipo_ts": 1784450874935,
+      "edit_count": 1,
+      "last_lines": 28,
+      "last_ts": 1784450874935,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "f8f576d8"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0540.jpg": {
+      "ipo_ts": 1784450875066,
+      "edit_count": 1,
+      "last_lines": 39,
+      "last_ts": 1784450875066,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2158c2b3"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0550.jpg": {
+      "ipo_ts": 1784450875192,
+      "edit_count": 1,
+      "last_lines": 33,
+      "last_ts": 1784450875192,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4665f1cb"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0560.jpg": {
+      "ipo_ts": 1784450875342,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784450875342,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "da19c321"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0570.jpg": {
+      "ipo_ts": 1784450875477,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784450875477,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "f166591f"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0580.jpg": {
+      "ipo_ts": 1784450875623,
+      "edit_count": 1,
+      "last_lines": 41,
+      "last_ts": 1784450875623,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "8607cb8b"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0590.jpg": {
+      "ipo_ts": 1784450875762,
+      "edit_count": 1,
+      "last_lines": 42,
+      "last_ts": 1784450875762,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2d33a4df"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0600.jpg": {
+      "ipo_ts": 1784450875881,
+      "edit_count": 1,
+      "last_lines": 35,
+      "last_ts": 1784450875881,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "83e7ba0e"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0620.jpg": {
+      "ipo_ts": 1784450876165,
+      "edit_count": 1,
+      "last_lines": 50,
+      "last_ts": 1784450876165,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5dc2bffc"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0630.jpg": {
+      "ipo_ts": 1784450876305,
+      "edit_count": 1,
+      "last_lines": 29,
+      "last_ts": 1784450876305,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "67ba1fe0"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0640.jpg": {
+      "ipo_ts": 1784450876445,
+      "edit_count": 1,
+      "last_lines": 38,
+      "last_ts": 1784450876445,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "593ab90d"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0650.jpg": {
+      "ipo_ts": 1784450876748,
+      "edit_count": 1,
+      "last_lines": 25,
+      "last_ts": 1784450876748,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "e11d203e"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0660.jpg": {
+      "ipo_ts": 1784450876823,
+      "edit_count": 1,
+      "last_lines": 46,
+      "last_ts": 1784450876823,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7f3de060"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0670.jpg": {
+      "ipo_ts": 1784450876899,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784450876899,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "55c925bc"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0680.jpg": {
+      "ipo_ts": 1784450877032,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784450877032,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "e725513e"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0690.jpg": {
+      "ipo_ts": 1784450877546,
+      "edit_count": 1,
+      "last_lines": 46,
+      "last_ts": 1784450877546,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2d00e43d"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0700.jpg": {
+      "ipo_ts": 1784450877617,
+      "edit_count": 1,
+      "last_lines": 46,
+      "last_ts": 1784450877617,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "331529c4"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0710.jpg": {
+      "ipo_ts": 1784450877681,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784450877681,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "615e74ff"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0730.jpg": {
+      "ipo_ts": 1784450877832,
+      "edit_count": 1,
+      "last_lines": 41,
+      "last_ts": 1784450877832,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fbdf9874"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0740.jpg": {
+      "ipo_ts": 1784450877965,
+      "edit_count": 1,
+      "last_lines": 27,
+      "last_ts": 1784450877965,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1271ecde"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0750.jpg": {
+      "ipo_ts": 1784450878108,
+      "edit_count": 1,
+      "last_lines": 32,
+      "last_ts": 1784450878108,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "55226906"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0760.jpg": {
+      "ipo_ts": 1784450878234,
+      "edit_count": 1,
+      "last_lines": 39,
+      "last_ts": 1784450878234,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "46e86680"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0770.jpg": {
+      "ipo_ts": 1784450878390,
+      "edit_count": 1,
+      "last_lines": 47,
+      "last_ts": 1784450878390,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "65896608"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0780.jpg": {
+      "ipo_ts": 1784450878654,
+      "edit_count": 1,
+      "last_lines": 47,
+      "last_ts": 1784450878654,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "7eca8386"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0790.jpg": {
+      "ipo_ts": 1784450878902,
+      "edit_count": 1,
+      "last_lines": 35,
+      "last_ts": 1784450878902,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "53421816"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0800.jpg": {
+      "ipo_ts": 1784450879108,
+      "edit_count": 1,
+      "last_lines": 41,
+      "last_ts": 1784450879108,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "bafef841"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0810.jpg": {
+      "ipo_ts": 1784450879246,
+      "edit_count": 1,
+      "last_lines": 42,
+      "last_ts": 1784450879246,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "4163715b"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0820.jpg": {
+      "ipo_ts": 1784450879354,
+      "edit_count": 1,
+      "last_lines": 41,
+      "last_ts": 1784450879354,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "d5cb2561"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0830.jpg": {
+      "ipo_ts": 1784450879520,
+      "edit_count": 1,
+      "last_lines": 28,
+      "last_ts": 1784450879520,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "85ca38e0"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0840.jpg": {
+      "ipo_ts": 1784450879970,
+      "edit_count": 1,
+      "last_lines": 46,
+      "last_ts": 1784450879970,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "c701d921"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0850.jpg": {
+      "ipo_ts": 1784450880053,
+      "edit_count": 1,
+      "last_lines": 50,
+      "last_ts": 1784450880053,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1ec7fff3"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0860.jpg": {
+      "ipo_ts": 1784450880203,
+      "edit_count": 1,
+      "last_lines": 9,
+      "last_ts": 1784450880203,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "55c925bc"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0870.jpg": {
+      "ipo_ts": 1784450880276,
+      "edit_count": 1,
+      "last_lines": 37,
+      "last_ts": 1784450880276,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5ab47350"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0880.jpg": {
+      "ipo_ts": 1784450880462,
+      "edit_count": 1,
+      "last_lines": 31,
+      "last_ts": 1784450880462,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "94b283"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0890.jpg": {
+      "ipo_ts": 1784450880601,
+      "edit_count": 1,
+      "last_lines": 40,
+      "last_ts": 1784450880601,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5c7ab20"
+    },
+    "motion/outputs_white/fit_work/ink_sweep_frames/frame_0900.jpg": {
+      "ipo_ts": 1784450880870,
+      "edit_count": 1,
+      "last_lines": 24,
+      "last_ts": 1784450880870,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "eb75eedc"
+    },
+    "motion/outputs_white/fit_work/continuity_sweep.json": {
+      "ipo_ts": 1784450906297,
+      "edit_count": 1,
+      "last_lines": 173,
+      "last_ts": 1784450906297,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "cfad1034"
+    },
+    "motion/黑色背景透明 copy.svg": {
+      "ipo_ts": 1784451406809,
+      "edit_count": 2,
+      "last_lines": 1,
+      "last_ts": 1784451409012,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1334d18"
+    },
+    "public/logo/黑色背景透明 copy.svg": {
+      "ipo_ts": 1784451422849,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784451422849,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1334d18"
+    },
+    "src/components/shared/AnimatedLogo.vue": {
+      "ipo_ts": 1784452716436,
+      "edit_count": 1,
+      "last_lines": 291,
+      "last_ts": 1784452716436,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "a9de1c6e"
+    },
+    "src/components/shared/LogoMotionExamples.vue": {
+      "ipo_ts": 1784452716502,
+      "edit_count": 1,
+      "last_lines": 141,
+      "last_ts": 1784452716502,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "6ffb7424"
+    },
+    "dist/images/team/qrcode_1784446844194.jpg": {
+      "ipo_ts": 1784452778414,
+      "edit_count": 1,
+      "last_lines": 1869,
+      "last_ts": 1784452778414,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1ef91f83"
+    },
+    "dist/images/team/qrcode_1784446912550.jpg": {
+      "ipo_ts": 1784452778493,
+      "edit_count": 1,
+      "last_lines": 1702,
+      "last_ts": 1784452778493,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ea08d88a"
+    },
+    "dist/logo/透明底图标.png": {
+      "ipo_ts": 1784452778551,
+      "edit_count": 1,
+      "last_lines": 45,
+      "last_ts": 1784452778551,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fd51209"
+    },
+    "dist/assets/Home-C1zOzP2J.css": {
+      "ipo_ts": 1784452778654,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784452778654,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "ec5fcacd"
+    },
+    "dist/assets/Home-DtoclOZk.js": {
+      "ipo_ts": 1784452778715,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784452778715,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "e862e6a6"
+    },
+    "dist/assets/Join-D8Q0ul8P.js": {
+      "ipo_ts": 1784452778773,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784452778773,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "1e6310a"
+    },
+    "dist/assets/index-D-2y8cgf.js": {
+      "ipo_ts": 1784452778838,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784452778838,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "b882d625"
+    },
+    "dist/assets/index-Df_YUdRq.css": {
+      "ipo_ts": 1784452778900,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784452778900,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "160230c"
+    },
+    "dist/assets/researchDirections-DtgjCq7E.js": {
+      "ipo_ts": 1784452778967,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784452778967,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "76ed61b8"
+    },
+    "dist/assets/Home-BP0y-mbi.js": {
+      "ipo_ts": 1784452987106,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784452987106,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "24448c1b"
+    },
+    "dist/assets/Home-D9e9SVsF.css": {
+      "ipo_ts": 1784452987172,
+      "edit_count": 1,
+      "last_lines": 1,
+      "last_ts": 1784452987172,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "2d92a687"
+    },
+    "dist/assets/Join-CYHgW8mJ.js": {
+      "ipo_ts": 1784452987234,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784452987234,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "bbbb16fb"
+    },
+    "dist/assets/index-D4mTGFsj.js": {
+      "ipo_ts": 1784452987295,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784452987295,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "5b7d297"
+    },
+    "dist/assets/researchDirections-BchxF18-.js": {
+      "ipo_ts": 1784452987358,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784452987358,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "58f26da5"
+    },
+    "dist/assets/Home-BGisv4XU.js": {
+      "ipo_ts": 1784453070008,
+      "edit_count": 1,
+      "last_lines": 26,
+      "last_ts": 1784453070008,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "e7aa009a"
+    },
+    "dist/assets/Join-D1DZ5KZt.js": {
+      "ipo_ts": 1784453070075,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784453070075,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "fd064c1c"
+    },
+    "dist/assets/index-n0dvICdO.js": {
+      "ipo_ts": 1784453070131,
+      "edit_count": 1,
+      "last_lines": 135,
+      "last_ts": 1784453070131,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "37cfa510"
+    },
+    "dist/assets/researchDirections-CYvSMtlN.js": {
+      "ipo_ts": 1784453070189,
+      "edit_count": 1,
+      "last_lines": 21,
+      "last_ts": 1784453070189,
+      "delisted": false,
+      "last_source": "onEdit",
+      "last_content_hash": "681a0c79"
     }
   }
 }

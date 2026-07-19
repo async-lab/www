@@ -1,11 +1,10 @@
 <script setup lang="ts">
 // 全站顶部导航栏：桌面端横向导航 + 移动端汉堡菜单，固定在页面顶部，滚动后切换为“紧凑态”样式。
 import { Menu, X } from "@lucide/vue";
-import { onMounted, onUnmounted, ref, watch } from "vue";
+import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 import { useAppStore } from "@/stores/app";
-import ThemeToggle from "../shared/ThemeToggle.vue";
 
 // 主导航条目；"关于我们" 指向首页锚点而非独立路由。
 const navItems = [
@@ -15,6 +14,7 @@ const navItems = [
 
 const route = useRoute();
 const appStore = useAppStore();
+const isHomeIntroPending = computed(() => route.path === "/" && !appStore.isHeroIntroComplete);
 // 滚动超过 24px 后为 true，用于切换导航栏的紧凑视觉样式（见下方 :class 绑定）。
 const isScrolled = ref(false);
 
@@ -41,7 +41,12 @@ watch(
 </script>
 
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 px-3 pt-3 sm:px-4">
+  <header
+    class="fixed left-0 right-0 top-0 z-50 px-3 pt-3 transition-opacity duration-200 sm:px-4"
+    :class="isHomeIntroPending ? 'pointer-events-none opacity-0' : 'opacity-100'"
+    :inert="isHomeIntroPending || undefined"
+    :aria-hidden="isHomeIntroPending ? 'true' : undefined"
+  >
     <!-- 无障碍“跳到主内容”链接：默认视觉隐藏，键盘 Tab 聚焦后可见，帮助屏幕阅读器/键盘用户跳过导航。 -->
     <a
       href="#main-content"
@@ -59,8 +64,16 @@ watch(
       "
       aria-label="主导航"
     >
-      <RouterLink to="/" class="flex min-w-0 items-center gap-4 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary">
+      <RouterLink
+        to="/"
+        data-header-brand
+        class="flex min-w-0 items-center gap-4 rounded-xl transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary"
+        :class="isHomeIntroPending ? 'pointer-events-none opacity-0' : 'opacity-100'"
+        :tabindex="isHomeIntroPending ? -1 : undefined"
+        :aria-hidden="isHomeIntroPending ? 'true' : undefined"
+      >
         <img
+          data-header-logo
           src="/logo/白色背景_透明.svg"
           alt=""
           class="h-1/2 w-1/1 shrink-0 rounded-lg border border-lab-border bg-white object-contain p-1"
