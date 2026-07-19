@@ -5,11 +5,11 @@ import { onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 import { useAppStore } from "@/stores/app";
+import ThemeToggle from "../shared/ThemeToggle.vue";
 
 // 主导航条目；"关于我们" 指向首页锚点而非独立路由。
 const navItems = [
   { label: "首页", to: "/" },
-  { label: "关于我们", to: "/#about" },
   { label: "加入我们", to: "/join" },
 ];
 
@@ -102,6 +102,8 @@ watch(
           <Menu v-else class="h-5 w-5" aria-hidden="true" />
         </button>
       </div>
+
+      
     </nav>
 
     <!-- 移动端下拉导航面板，复用全局 "page" 过渡效果实现展开/收起动画。 -->

@@ -67,7 +67,7 @@ const faqs = [
           />
           <div class="mt-9">
             <BaseButton as="a" href="mailto:example@example.com" size="lg">
-              联系方式待确认
+              QQ群954192337
             </BaseButton>
           </div>
         </ScrollReveal>

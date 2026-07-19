@@ -181,7 +181,7 @@ onUnmounted(() => {
             <div>
               <SectionTitle
                 title="从嵌入式起步，成长为面向多方向的开发团队"
-                description="异步开发实验室（Async Lab）成立于 2013 年，前身为 IOTU 实验室。团队汇聚全校各专业热爱创造、热爱学习、热爱生活的同学，在 Web 前端、后端、C++ 与嵌入式、移动端等方向持续探索。"
+                description="异步开发实验室（Async Lab）成立于 2013 年，前身为 IOTU 实验室。团队汇聚全校各专业热爱创造、热爱学习、热爱生活的同学，在 Web 前端、后端、Python与嵌入式、移动端等方向持续探索。"
               />
 
               <dl class="mt-12 grid border-t border-lab-border sm:grid-cols-2 sm:gap-x-10">
@@ -231,7 +231,7 @@ onUnmounted(() => {
     <!-- 02 / Timeline：发展历程，桌面端为固定 + 横向滚动的时间线卡片轨道。 -->
     <section
       id="history"
-      class="history-scroll relative scroll-mt-28 overflow-hidden bg-lab-text py-24 text-white md:min-h-screen md:py-28"
+      class="history-scroll relative scroll-mt-28 overflow-hidden bg-black py-24 text-white md:min-h-screen md:py-28"
       aria-labelledby="history-title"
     >
       <div class="lab-container">
@@ -273,6 +273,7 @@ onUnmounted(() => {
             class="absolute inset-x-8 bottom-8 h-px origin-left scale-x-25 bg-lab-primary transition-transform duration-300 group-hover:scale-x-100"
             aria-hidden="true"
           />
+          <img src="" alt="">
         </article>
       </div>
     </section>
@@ -316,7 +317,7 @@ onUnmounted(() => {
         <ScrollReveal>
           <p class="font-mono text-xs uppercase text-white/70">Join the Track</p>
           <h2 class="mt-4 max-w-4xl font-display text-3xl font-semibold leading-tight md:text-5xl">
-            用 8 周学习路径，走进真实项目
+            用 8-10 周学习路径，走进真实项目
           </h2>
           <p class="mt-6 max-w-2xl text-base leading-8 text-white/75">
             从一条适合自己的技术方向开始，在持续学习、协作开发和项目复盘中，把兴趣变成真正可以交付的能力。

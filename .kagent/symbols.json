@@ -191,21 +191,21 @@
     },
     "src/components/layout/SiteHeader.vue": {
       "ipo_ts": 1782565757400,
-      "edit_count": 22,
-      "last_lines": 127,
-      "last_ts": 1784287624209,
+      "edit_count": 26,
+      "last_lines": 129,
+      "last_ts": 1784367272868,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "c14abb0d"
+      "last_content_hash": "1c9c384a"
     },
     "src/components/layout/SiteFooter.vue": {
       "ipo_ts": 1782565758206,
-      "edit_count": 11,
+      "edit_count": 17,
       "last_lines": 59,
-      "last_ts": 1784287632452,
+      "last_ts": 1784354079152,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "ae3572f6"
+      "last_content_hash": "3dbab013"
     },
     "src/components/shared/ThemeToggle.vue": {
       "ipo_ts": 1782565759597,
@@ -263,12 +263,12 @@
     },
     "src/components/home/HeroSection.vue": {
       "ipo_ts": 1782565857975,
-      "edit_count": 49,
+      "edit_count": 50,
       "last_lines": 557,
-      "last_ts": 1784287763164,
+      "last_ts": 1784354261698,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "8c86adc0"
+      "last_content_hash": "5d965d06"
     },
     "src/components/home/ResearchDirections.vue": {
       "ipo_ts": 1782565858716,
@@ -281,21 +281,21 @@
     },
     "src/pages/Home.vue": {
       "ipo_ts": 1782565860065,
-      "edit_count": 33,
-      "last_lines": 333,
-      "last_ts": 1784287828659,
+      "edit_count": 44,
+      "last_lines": 334,
+      "last_ts": 1784368392732,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "dda40367"
+      "last_content_hash": "344df77a"
     },
     "src/pages/Join.vue": {
       "ipo_ts": 1782565964403,
-      "edit_count": 7,
+      "edit_count": 11,
       "last_lines": 196,
-      "last_ts": 1784287850229,
+      "last_ts": 1784368192781,
       "delisted": false,
       "last_source": "onEdit",
-      "last_content_hash": "db20f2a1"
+      "last_content_hash": "36285a50"
     },
     ".gitignore": {
       "ipo_ts": 1782565990536,
@@ -114507,28 +114507,6 @@
       "last_source": "onEdit",
       "last_content_hash": "1334d18"
     },
-    "dist/assets/Home-DtgXDJDx.css": {
-      "ipo_ts": 1784198594906,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784198594906,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "9590ad9c",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-DPZQ54Qh.css": {
-      "ipo_ts": 1784199201523,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784199201523,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "39e589dd",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
     "HANDOFF.md": {
       "ipo_ts": 1784199457589,
       "edit_count": 5,
@@ -114538,160 +114516,6 @@
       "last_source": "onEdit",
       "last_content_hash": "3d534987"
     },
-    "dist/assets/Home-xzcs8dXI.js": {
-      "ipo_ts": 1784199490611,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784199490611,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "888dd854",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-B94FyKve.js": {
-      "ipo_ts": 1784199490671,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784199490671,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "a4a17363",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-ujj2IQqJ.js": {
-      "ipo_ts": 1784199490734,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784199490734,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "3071814f",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/researchDirections-B1uWUZLF.js": {
-      "ipo_ts": 1784199490793,
-      "edit_count": 1,
-      "last_lines": 16,
-      "last_ts": 1784199490793,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "4a5f7133",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-DIstF7hX.js": {
-      "ipo_ts": 1784217459280,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784217459280,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "4ea7fc7b",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-cE1Uw4CA.css": {
-      "ipo_ts": 1784217459327,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784217459327,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "9ee32cea",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-iGo9hR1m.js": {
-      "ipo_ts": 1784217459373,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784217459373,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "7835093a",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-BkNRPVHM.js": {
-      "ipo_ts": 1784217459421,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784217459421,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "3f7f4b15",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-DQ9o7h4X.css": {
-      "ipo_ts": 1784217459470,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784217459470,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "ea9eb22a",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/researchDirections-D1brr3fL.js": {
-      "ipo_ts": 1784217459515,
-      "edit_count": 1,
-      "last_lines": 16,
-      "last_ts": 1784217459515,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "8212cc43",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-D1VfArjx.js": {
-      "ipo_ts": 1784218559670,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784218559670,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "cabfc1db",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-DA4Juap3.css": {
-      "ipo_ts": 1784218559718,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784218559718,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "b18ef7c1",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-5UgRL_nX.js": {
-      "ipo_ts": 1784218559767,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784218559767,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "bbcefa7",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-B9LIVzxW.js": {
-      "ipo_ts": 1784218559815,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784218559815,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "31d9686e",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
     "dist/assets/index-DWfcleII.css": {
       "ipo_ts": 1784218559863,
       "edit_count": 1,
@@ -114700,317 +114524,6 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "54f15dc5"
-    },
-    "dist/assets/researchDirections-CGtc_Acg.js": {
-      "ipo_ts": 1784218559910,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784218559910,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "a1986c89",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-DkbD9_yq.css": {
-      "ipo_ts": 1784219586370,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784219586370,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "982fe996",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-IDjp9wnw.js": {
-      "ipo_ts": 1784219586418,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784219586418,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "d701e798",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-FGzZuRaA.js": {
-      "ipo_ts": 1784219586467,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784219586467,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "c919c483",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-DaN6NlLF.js": {
-      "ipo_ts": 1784219586516,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784219586516,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "f461f838",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/researchDirections-Bp4x4AXq.js": {
-      "ipo_ts": 1784219586569,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784219586569,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "71a1c5ec",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-CbP2xkdw.css": {
-      "ipo_ts": 1784219749251,
-      "edit_count": 2,
-      "last_lines": 1,
-      "last_ts": 1784220174079,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "cc3dfee3",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-kMwhuCss.js": {
-      "ipo_ts": 1784219749299,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784219749299,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "c76d0ebf",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-0v3Tg8qP.js": {
-      "ipo_ts": 1784219749346,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784219749346,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "d506aeaa",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-Ca1oVo9F.js": {
-      "ipo_ts": 1784219749393,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784219749393,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "9a425256",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/researchDirections-CEAPFodN.js": {
-      "ipo_ts": 1784219749440,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784219749440,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "e01ff047",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-CqjcxfcH.js": {
-      "ipo_ts": 1784220875508,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784220875508,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "4ef31600",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-DGyviEwG.css": {
-      "ipo_ts": 1784220875554,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784220875554,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "8a5e78ee",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Join-co4EoynH.js": {
-      "ipo_ts": 1784220875604,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784220875604,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "c37ac221",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/index-qACjLCVZ.js": {
-      "ipo_ts": 1784220875653,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784220875653,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "a3c45074",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/researchDirections-BcYBsxSO.js": {
-      "ipo_ts": 1784220875708,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784220875708,
-      "delisted": true,
-      "last_source": "onEdit",
-      "last_content_hash": "fc7be1f7",
-      "delisted_at": 1784266627353,
-      "delist_rounds": 0
-    },
-    "dist/assets/Home-BdvBtK-G.js": {
-      "ipo_ts": 1784221339523,
-      "edit_count": 2,
-      "last_lines": 26,
-      "last_ts": 1784221360369,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "5120b9e8"
-    },
-    "dist/assets/Home-Bij6QBVQ.css": {
-      "ipo_ts": 1784221339571,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784221339571,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "d46e7faa"
-    },
-    "dist/assets/Join-CVwiJh3x.js": {
-      "ipo_ts": 1784221339628,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784221339628,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "54d65ea5"
-    },
-    "dist/assets/index-BuoU170i.js": {
-      "ipo_ts": 1784221339679,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784221339679,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "c82bb47b"
-    },
-    "dist/assets/researchDirections-B1wdA0l6.js": {
-      "ipo_ts": 1784221339730,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784221339730,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "7bebff51"
-    },
-    "dist/assets/Home-CHSVhUyZ.js": {
-      "ipo_ts": 1784267302093,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784267302093,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "1fca69dc"
-    },
-    "dist/assets/Home-jpmXdhRX.css": {
-      "ipo_ts": 1784267302145,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784267302145,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "4e345508"
-    },
-    "dist/assets/Join-BNWF0X5a.js": {
-      "ipo_ts": 1784267302198,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784267302198,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "ca3af909"
-    },
-    "dist/assets/index-BECOpsRg.js": {
-      "ipo_ts": 1784267302249,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784267302249,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "28163f2d"
-    },
-    "dist/assets/researchDirections-BQjFuQ48.js": {
-      "ipo_ts": 1784267302304,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784267302304,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "69d8d539"
-    },
-    "dist/assets/Home-BfA14ZBC.js": {
-      "ipo_ts": 1784270357461,
-      "edit_count": 1,
-      "last_lines": 26,
-      "last_ts": 1784270357461,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "a7e0aaf4"
-    },
-    "dist/assets/Home-BgiYD9sk.css": {
-      "ipo_ts": 1784270357520,
-      "edit_count": 1,
-      "last_lines": 1,
-      "last_ts": 1784270357520,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "a688e417"
-    },
-    "dist/assets/Join-0mus2K8g.js": {
-      "ipo_ts": 1784270357582,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784270357582,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "ea8f7dc"
-    },
-    "dist/assets/index-Cr5GYIH-.js": {
-      "ipo_ts": 1784270357640,
-      "edit_count": 1,
-      "last_lines": 135,
-      "last_ts": 1784270357640,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "c2498700"
-    },
-    "dist/assets/researchDirections-Dfq-iHQA.js": {
-      "ipo_ts": 1784270357698,
-      "edit_count": 1,
-      "last_lines": 21,
-      "last_ts": 1784270357698,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "704adbaa"
     },
     "dist/assets/Home-DSfzCM0S.css": {
       "ipo_ts": 1784278704956,
@@ -115083,15 +114596,6 @@
       "delisted": false,
       "last_source": "onEdit",
       "last_content_hash": "ebfcb622"
-    },
-    ".codegraph/codegraph.lock": {
-      "ipo_ts": 1784282332387,
-      "edit_count": 2,
-      "last_lines": 1,
-      "last_ts": 1784283644162,
-      "delisted": false,
-      "last_source": "onEdit",
-      "last_content_hash": "2f4cd97"
     },
     ".playwright-mcp/page-2026-07-17T10-06-32-463Z.yml": {
       "ipo_ts": 1784282794597,

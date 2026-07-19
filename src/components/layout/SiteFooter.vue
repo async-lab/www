@@ -17,7 +17,7 @@ const hasEmail = contact.email && contact.email !== "待确认";
             class="grid h-10 w-10 place-items-center rounded-full border border-lab-border bg-white font-mono text-sm font-bold text-lab-text"
             aria-hidden="true"
           >
-            AL
+            <img src="/logo/白色背景_透明.svg" alt="异步开发实验室">
           </span>
           <div>
             <p class="font-display text-base font-semibold">异步开发实验室</p>
@@ -25,7 +25,7 @@ const hasEmail = contact.email && contact.email !== "待确认";
           </div>
         </div>
         <p class="max-w-xl text-sm leading-8 text-lab-muted">
-          2013 年成立，前身为 IOTU 实验室。如今面向 Web 前端、后端、C++ 与嵌入式、移动端等方向，
+          2013 年成立，前身为 IOTU 实验室。如今面向 Web 前端、后端、Python与嵌入式、移动端等方向，
           为热爱开发的同学提供共同学习、项目实践与技术交流的空间。
         </p>
       </div>

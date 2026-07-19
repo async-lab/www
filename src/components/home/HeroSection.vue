@@ -470,7 +470,7 @@ onUnmounted(() => {
           class="hero-background-art w-[88vw] max-w-[42rem] sm:w-[78vw] md:w-[68vw] lg:h-[100svh] lg:w-auto lg:max-w-none lg:translate-x-[8svh]"
         >
           <img
-            class="h-auto w-full max-w-full object-contain opacity-[0.07] sm:opacity-[0.09] lg:h-full lg:w-auto lg:max-w-none lg:opacity-[0.12]"
+            class="h-auto w-full max-w-full object-contain opacity-[0.07] sm:opacity-[0.09] lg:h-full lg:w-auto lg:max-w-none lg:opacity-[0.5]"
             :src="logoSrc"
             alt=""
             width="500"
