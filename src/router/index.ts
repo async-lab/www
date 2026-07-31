@@ -12,9 +12,9 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: "/about",
+    path: "/",
     // 历史/兼容路径：跳转到首页的 #about 锚点区块，而不是独立页面。
-    redirect: "/#about",
+    redirect: "/",
   },
   {
     path: "/join",

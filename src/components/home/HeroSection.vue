@@ -7,7 +7,7 @@ import { onMounted, onUnmounted, ref } from "vue";
 import AnimatedLogo from "@/components/shared/AnimatedLogo.vue";
 import LogoMotionExamples from "@/components/shared/LogoMotionExamples.vue";
 import BaseButton from "@/components/ui/BaseButton.vue";
-import { gsap } from "@/lib/gsap";
+import { getScrollSmoother, gsap } from "@/lib/gsap";
 import { useAppStore } from "@/stores/app";
 
 const hero = ref<HTMLElement | null>(null);
@@ -22,6 +22,20 @@ const appStore = useAppStore();
 const splashDuration = 1.5;
 const logoTransferDuration = 0.42;
 const heroContentDelay = 0.35;
+
+/** 页面内滚动辅助：与全局 ScrollSmoother 保持同一套滚动状态，避免触发器失步。 */
+function scrollTo(selector: string) {
+  const el = document.querySelector(selector) as HTMLElement | null;
+  if (!el) return;
+
+  const smoother = getScrollSmoother();
+  if (smoother) {
+    smoother.scrollTop(smoother.offset(el, "top 96px"));
+  } else {
+    const targetTop = el.getBoundingClientRect().top + window.scrollY - 96;
+    window.scrollTo({ top: Math.max(0, targetTop), behavior: "smooth" });
+  }
+}
 
 // 单个粒子（光点）的运动状态。
 type SparkParticle = {
@@ -536,16 +550,16 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <!-- 背景装饰层：右侧/居中大 Logo 水印 + 粒子流动 Canvas，均为纯装饰，不参与交互（pointer-events-none）。 -->
+    <!-- 背景装饰层：居中（移动端/平板）/画面约 2/3 处（lg 及以上，右侧 1/3）大 Logo 水印 + 粒子流动 Canvas，均为纯装饰，不参与交互（pointer-events-none）。 -->
     <div class="hero-ribbon pointer-events-none absolute inset-0 z-0 bg-white" aria-hidden="true">
       <div
-        class="absolute inset-0 flex items-center justify-center px-5 sm:px-10 lg:justify-end lg:px-0"
+        class="absolute inset-0 flex items-center justify-center px-5 sm:px-10"
       >
         <div
-          class="hero-background-art w-[88vw] max-w-[42rem] sm:w-[78vw] md:w-[68vw] lg:h-[100svh] lg:w-auto lg:max-w-none lg:translate-x-[8svh]"
+          class="hero-background-art w-[80vw] max-w-[34rem] sm:w-[68vw] md:w-[58vw] lg:absolute lg:left-2/3 lg:top-1/2 lg:h-[min(72svh,34rem)] lg:w-auto"
         >
           <img
-            class="h-auto w-full max-w-full object-contain opacity-[0.07] sm:opacity-[0.09] lg:h-full lg:w-auto lg:max-w-none lg:opacity-[0.5]"
+            class="h-auto w-full max-w-full object-contain opacity-[0.07] sm:opacity-[0.09] lg:h-full lg:w-auto lg:opacity-[0.1] lg:-translate-x-1/2 lg:-translate-y-1/2"
             :src="logoSrc"
             alt=""
             width="500"
@@ -597,7 +611,7 @@ onUnmounted(() => {
             </p>
 
             <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-              <BaseButton as="RouterLink" to="/#about" size="lg">
+              <BaseButton size="lg" @click="scrollTo('#about')">
                 了解实验室
                 <ArrowRight class="h-4 w-4" aria-hidden="true" />
               </BaseButton>
@@ -611,13 +625,14 @@ onUnmounted(() => {
     </div>
 
     <!-- 右下角“继续滚动”提示按钮；滚动超过 64px 后通过 .has-left-hero 淡出（见下方 scoped 样式）。 -->
-    <RouterLink
-      to="/#about"
+    <button
+      type="button"
       class="hero-scroll-cue absolute bottom-6 right-4 z-20 grid h-12 w-12 cursor-pointer place-items-center rounded-full border border-lab-border bg-white/[0.92] text-lab-text shadow-sm backdrop-blur-sm transition-[color,border-color,transform] duration-200 hover:-translate-y-1 hover:border-lab-primary hover:text-lab-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-lab-primary sm:right-6 lg:right-8"
       aria-label="浏览下一部分"
+      @click="scrollTo('#about')"
     >
       <ArrowDown class="h-5 w-5" aria-hidden="true" />
-    </RouterLink>
+    </button>
   </section>
 </template>
 

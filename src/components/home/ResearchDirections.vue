@@ -10,7 +10,7 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
  * 组件结构总览
  *
  * 1. 小于 1024px：使用普通文档流中的单选手风琴，不创建桌面端 GSAP 时间线。
- * 2. 大于等于 1024px：固定整个 section，通过一条 ScrollTrigger 时间线切换四个方向面板。
+ * 2. 大于等于 1024px：固定整个 section，通过一条 ScrollTrigger 时间线切换研究方向面板。
  * 3. 大于等于 1024px 且开启“减少动态效果”：跳过固定与切换动画，改为纵向展示全部面板。
  *
  * 常用修改入口
@@ -19,18 +19,20 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
  * - 桌面固定滚动距离（即每个方向的停留时长）：下方 ScrollTrigger 的 end
  * - 面板淡入淡出节奏：panels.forEach() 内的 transitionStart 和 duration
  *
- * 桌面端没有滚轮吸附：四个方向的切换完全由滚动进度线性驱动（scrub: true），
+ * 桌面端没有滚轮吸附：各方向的切换完全由滚动进度线性驱动（scrub: true），
  * 滚多少切多少，停在哪个进度就停在哪个面板，不会自动吸附到最近的方向。
  */
 
 /** 整个研究方向 section 的 DOM 引用，也是 ScrollTrigger 的 trigger 和 GSAP 选择器作用域。 */
 const section = ref<HTMLElement | null>(null);
 
-/** 桌面端当前方向索引：驱动左侧进度指示器的高亮，取值范围为 0～3。 */
+/** 桌面端当前方向索引：驱动左侧进度指示器的高亮。 */
 const activeDirection = ref(0);
 
 /** 移动端/平板端当前展开的手风琴索引，与桌面端 activeDirection 相互独立。 */
 const selectedDirection = ref(0);
+
+const formatDirectionNumber = (value: number) => String(value).padStart(2, "0");
 
 /** 保存 gsap.matchMedia() 实例，以便组件卸载时统一撤销媒体查询和其中创建的动画。 */
 let media: ReturnType<typeof gsap.matchMedia> | undefined;
@@ -73,6 +75,9 @@ onMounted(() => {
       const panels = Array.from(
         section.value?.querySelectorAll<HTMLElement>(".research-panel--desktop") ?? [],
       );
+      const panelReveals = panels.map((panel) =>
+        Array.from(panel.querySelectorAll<HTMLElement>(".research-panel__reveal")),
+      );
 
       // 小于 1024px 时完全交给 Vue + CSS 手风琴，不创建 ScrollTrigger。
       if (!desktop) {
@@ -90,17 +95,31 @@ onMounted(() => {
           scale: 1,
           clearProps: "transform,opacity,visibility",
         });
+        gsap.set(panelReveals.flat(), {
+          autoAlpha: 1,
+          x: 0,
+          clearProps: "transform,opacity,visibility",
+        });
         return;
       }
 
-      // 桌面动画初始状态：除第一项外全部隐藏，并略微下移、缩小。
-      gsap.set(panels, { autoAlpha: 0, y: 44, scale: 0.985 });
-      gsap.set(panels[0], { autoAlpha: 1, y: 0, scale: 1 });
+      // 桌面动画初始状态：除第一项外全部隐藏，并预留轻微的 3D 纵深。
+      gsap.set(panels, {
+        autoAlpha: 0,
+        y: 52,
+        scale: 0.972,
+        rotationX: 6,
+        transformPerspective: 1200,
+        transformOrigin: "50% 78%",
+      });
+      gsap.set(panels[0], { autoAlpha: 1, y: 0, scale: 1, rotationX: 0 });
+      gsap.set(panelReveals.flat(), { autoAlpha: 0, x: 34 });
+      gsap.set(panelReveals[0], { autoAlpha: 1, x: 0 });
 
       /**
        * 这个对象本身不会渲染到页面。
        * 它的作用是把 timeline 的总时长固定为 panels.length - 1 个单位，
-       * 让四个方向的逻辑落点稳定分布在 0、1/3、2/3、1。
+       * 让所有方向的逻辑落点均匀分布在完整的滚动进度中。
        */
       const timelineState = { progress: 0 };
 
@@ -162,25 +181,59 @@ onMounted(() => {
          * 例如 index=1 时从 0.14 开始，index=2 时从 1.14 开始。
          */
         const transitionStart = index - 1 + 0.14;
+        const previousReveals = panelReveals[index - 1];
+        const currentReveals = panelReveals[index];
 
         timeline
-          .to(panels[index - 1], {
-            autoAlpha: 0,
-            y: -24,
-            scale: 0.99,
-            duration: 0.22,
-          }, transitionStart)
+          .to(
+            previousReveals,
+            {
+              autoAlpha: 0,
+              x: -26,
+              duration: 0.16,
+              stagger: 0.018,
+              ease: "power2.in",
+            },
+            transitionStart,
+          )
+          .to(
+            panels[index - 1],
+            {
+              autoAlpha: 0,
+              y: -34,
+              scale: 0.976,
+              rotationX: -5,
+              duration: 0.24,
+              ease: "power2.inOut",
+            },
+            transitionStart + 0.03,
+          )
           .fromTo(
             panel,
-            { autoAlpha: 0, y: 24, scale: 0.99 },
+            { autoAlpha: 0, y: 48, scale: 0.972, rotationX: 6 },
             {
               autoAlpha: 1,
               y: 0,
               scale: 1,
-              duration: 0.28,
+              rotationX: 0,
+              duration: 0.3,
+              ease: "power3.out",
               immediateRender: false,
             },
-            transitionStart + 0.04,
+            transitionStart + 0.08,
+          )
+          .fromTo(
+            currentReveals,
+            { autoAlpha: 0, x: 34 },
+            {
+              autoAlpha: 1,
+              x: 0,
+              duration: 0.22,
+              stagger: 0.032,
+              ease: "power3.out",
+              immediateRender: false,
+            },
+            transitionStart + 0.12,
           );
       });
 
@@ -224,7 +277,7 @@ onUnmounted(() => {
         <div id="research-title">
           <p class="font-mono text-xs uppercase tracking-[0.16em] text-lab-primary">Research Directions</p>
           <h2 class="mt-3 max-w-xl font-display text-2xl font-semibold leading-tight text-lab-text sm:text-3xl">
-            四个方向，选择后完整查看
+            六个方向，选择后完整查看
           </h2>
         </div>
 
@@ -260,7 +313,7 @@ onUnmounted(() => {
                 </span>
                 <span class="min-w-0">
                   <span class="block font-mono text-[10px] uppercase tracking-[0.12em] text-lab-muted">
-                    0{{ index + 1 }} · {{ direction.subtitle }}
+                    {{ formatDirectionNumber(index + 1) }} · {{ direction.subtitle }}
                   </span>
                   <span class="mt-0.5 block text-sm font-semibold text-lab-text sm:text-base">
                     {{ direction.title }}
@@ -324,18 +377,18 @@ onUnmounted(() => {
       <!--
         ============================== 桌面布局 ==============================
         hidden lg:grid 表示从 1024px 开始显示。
-        左列是标题和方向进度，右列是四个绝对定位、相互叠放的内容面板。
+        左列是标题和方向进度，右列是多个绝对定位、相互叠放的内容面板。
       -->
       <div
         class="research-stage hidden gap-14 lg:grid lg:min-h-[620px] lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:items-stretch lg:gap-20"
       >
-        <!-- 左列：静态介绍 + 由 activeDirection 驱动的四步进度指示器。 -->
+        <!-- 左列：静态介绍 + 由 activeDirection 驱动的方向进度指示器。 -->
         <div class="flex flex-col justify-between">
           <div>
             <div id="research-title">
               <SectionTitle
                 eyebrow="Research Directions"
-                title="四个方向，一套完整的全栈能力地图"
+                title="六个方向，一套完整的全栈能力地图"
                 description="从界面体验到服务架构，从移动应用到智能硬件，我们用共同的工程方法连接不同技术方向。"
               />
             </div>
@@ -354,7 +407,7 @@ onUnmounted(() => {
               :class="activeDirection === index ? 'text-lab-text' : 'text-lab-muted'"
               :aria-current="activeDirection === index ? 'step' : undefined"
             >
-              <span class="font-mono text-xs">0{{ index + 1 }}</span>
+              <span class="font-mono text-xs">{{ formatDirectionNumber(index + 1) }}</span>
               <span
                 class="h-px origin-left transition-[transform,background-color] duration-300"
                 :class="activeDirection === index ? 'scale-x-100 bg-lab-primary' : 'scale-x-75 bg-lab-border'"
@@ -370,7 +423,7 @@ onUnmounted(() => {
           叠在同一个位置，具体显示哪一项由 GSAP 控制 autoAlpha、y 和 scale。
         -->
         <div
-          class="research-panels relative mt-10 min-h-0 border-t border-lab-border lg:mt-0 lg:min-h-[620px] lg:border-l lg:border-t-0 lg:pl-16"
+          class="research-panels relative mt-10 min-h-0 border-t border-lab-border lg:mt-0 lg:min-h-[620px] lg:border-t-0 lg:pl-16"
         >
           <article
             v-for="(direction, index) in researchDirections"
@@ -378,24 +431,28 @@ onUnmounted(() => {
             class="research-panel research-panel--desktop absolute inset-0 flex border-b-0 py-0"
           >
             <div class="my-auto w-full">
-              <div class="flex items-center justify-between gap-6">
+              <div class="research-panel__reveal flex items-center justify-between gap-6">
                 <div
                   class="grid h-14 w-14 place-items-center rounded-lg border border-lab-border bg-lab-surface text-lab-primary"
                 >
                   <component :is="direction.icon" class="h-7 w-7" aria-hidden="true" />
                 </div>
-                <span class="font-mono text-sm text-lab-primary">0{{ index + 1 }} / 04</span>
+                <span class="font-mono text-sm text-lab-primary">
+                  {{ formatDirectionNumber(index + 1) }} / {{ formatDirectionNumber(researchDirections.length) }}
+                </span>
               </div>
 
-              <p class="mt-10 font-mono text-xs uppercase text-lab-muted">{{ direction.subtitle }}</p>
-              <h3 class="mt-4 font-display text-4xl font-semibold leading-tight text-lab-text sm:text-5xl lg:text-6xl">
+              <p class="research-panel__reveal mt-10 font-mono text-xs uppercase text-lab-muted">
+                {{ direction.subtitle }}
+              </p>
+              <h3 class="research-panel__reveal mt-4 font-display text-4xl font-semibold leading-tight text-lab-text sm:text-5xl lg:text-6xl">
                 {{ direction.title }}
               </h3>
-              <p class="mt-6 max-w-2xl text-base leading-8 text-lab-muted lg:text-lg">
+              <p class="research-panel__reveal mt-6 max-w-2xl text-base leading-8 text-lab-muted lg:text-lg">
                 {{ direction.summary }}
               </p>
 
-              <div class="mt-10 grid gap-10 border-t border-lab-border pt-8 sm:grid-cols-2">
+              <div class="research-panel__reveal mt-10 grid gap-10 border-t border-lab-border pt-8 sm:grid-cols-2">
                 <div>
                   <h4 class="text-sm font-semibold text-lab-text">技术栈</h4>
                   <div class="mt-4 flex flex-wrap gap-3">
@@ -441,7 +498,7 @@ onUnmounted(() => {
   }
 
   .research-panel {
-    /* 覆盖模板里的 absolute/inset-0，使四个方向按顺序纵向排列。 */
+    /* 覆盖模板里的 absolute/inset-0，使全部方向按顺序纵向排列。 */
     position: relative;
     display: flex;
     border-bottom-width: 1px;

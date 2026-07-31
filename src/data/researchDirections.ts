@@ -1,10 +1,10 @@
-import { Code2, Cpu, Server, Smartphone } from "@lucide/vue";
+import { BrainCircuit, Braces, Code2, Cpu, Server, Smartphone } from "@lucide/vue";
 import type { Component } from "vue";
 
 // 研究方向的数据结构定义。ResearchDirections.vue（首页）与 Join.vue（招募页）
 // 共用同一份数据源，保证两处方向介绍内容一致。
 export interface ResearchDirection {
-  id: "frontend" | "backend" | "mobile" | "embedded";
+  id: "frontend" | "backend" | "python" | "ai" | "mobile" | "embedded";
   title: string;
   subtitle: string;
   summary: string;
@@ -14,7 +14,7 @@ export interface ResearchDirection {
   topics: string[];
 }
 
-// 四大研究方向的具体内容。新增/调整方向时只需修改这里，两个页面会自动同步更新。
+// 六个研究方向的具体内容。新增/调整方向时只需修改这里，两个页面会自动同步更新。
 export const researchDirections: ResearchDirection[] = [
   {
     id: "frontend",
@@ -35,6 +35,26 @@ export const researchDirections: ResearchDirection[] = [
     icon: Server,
     stacks: ["Node.js", "Java", "Python", "DevOps"],
     topics: ["微服务架构", "分布式系统", "数据库优化", "云原生实践"],
+  },
+  {
+    id: "python",
+    title: "Python 开发",
+    subtitle: "Python Development",
+    summary: "围绕 Python 开展自动化、Web 服务、数据处理与科学计算实践。",
+    color: "#0066FF",
+    icon: Braces,
+    stacks: ["Python", "FastAPI", "Django", "Pandas"],
+    topics: ["自动化脚本", "Web 服务", "数据处理", "科学计算"],
+  },
+  {
+    id: "ai",
+    title: "人工智能",
+    subtitle: "Artificial Intelligence",
+    summary: "探索机器学习、深度学习、计算机视觉与大语言模型应用，让模型能力落到真实场景。",
+    color: "#0066FF",
+    icon: BrainCircuit,
+    stacks: ["PyTorch", "TensorFlow", "OpenCV", "LLM"],
+    topics: ["机器学习", "深度学习", "计算机视觉", "大语言模型"],
   },
   {
     id: "mobile",

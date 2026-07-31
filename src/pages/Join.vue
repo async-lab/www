@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// 加入我们页面：招募信息 + 四大方向要求（复用 researchDirections 数据）+ 申请流程四步 + FAQ 手风琴。
+// 加入我们页面：招募信息 + 六个方向要求（复用 researchDirections 数据）+ 申请流程四步 + FAQ 手风琴。
 // 页面标注了多处“占位内容”，注释中保留说明供后续接入真实数据时参考。
 import { BadgeCheck, ChevronDown, Clock3, MessageSquare, Rocket } from "@lucide/vue";
 import { onMounted, onUnmounted, ref } from "vue";
@@ -88,7 +88,7 @@ onUnmounted(() => {
 // “申请流程”四个步骤，与下方四列布局一一对应。
 const steps = [
   {
-    title: "8 周学习",
+    title: "8-10 周学习",
     description: "完成基础知识、工程工具、代码规范和方向专题训练。",
     icon: Clock3,
   },
@@ -121,7 +121,7 @@ const faqs = [
   },
   {
     question: "实验室项目？",
-    answer: "建议把成员、项目、新闻等内容放到 public/data 的 JSON 文件中，页面组件只负责展示。",
+    answer: "一般是自己寻找，也可能会有老师提供一些项目题目，实验室也会有一些长期项目，大家可以参与。",
   },
   {
     question: '学长学姐教学？',
@@ -129,11 +129,11 @@ const faqs = [
   },
   {
     question: '实验室会比赛吗？',
-    answer: '实验室支持大家打比赛，指导老师可能会会指定要求参加一些比赛。'
+    answer: '实验室支持大家打比赛，指导老师可能会会指定要求参加一些比赛但实验室本身不举办比赛。'
   },
   {
     question: '实验室氛围',
-    answer: '实验室氛围轻松，大家可以自由讨论技术问题，也可以分享自己的学习经验。'
+    answer: '实验室氛围轻松，大家可以自由讨论技术问题，也可以分享自己的学习经验。没有项目技术要求，进入实验室后就没有方向限制。'
   }
 ];
 </script>
@@ -147,7 +147,7 @@ const faqs = [
           <SectionTitle
           eyebrow="Join Us"
           title="加入异步开发实验室"
-          description="这里先按文档搭好招生信息、申请流程和 FAQ。具体人数、邮箱、地点确认后，可以替换占位内容。"
+          description="欢迎对前端、后端、移动端、AI、Python等方向感兴趣的同学加入实验室，参与真实项目和技术研究。"
           />
           <div class="mt-9">
             <BaseButton as="a" href="mailto:example@example.com" size="lg">
@@ -165,13 +165,13 @@ const faqs = [
       </div>
     </section>
 
-    <!-- 四大方向招募卡片：数据来自 src/data/researchDirections.ts，与首页研究方向区块共用同一数据源。 -->
+    <!-- 六个方向招募卡片：数据来自 src/data/researchDirections.ts，与首页研究方向区块共用同一数据源。 -->
     <section class="lab-container py-24">
       <ScrollReveal>
         <SectionTitle
           eyebrow="Recruiting Tracks"
-          title="四大方向招募"
-          description="每个方向先放技能要求和培养目标，后续可替换为正式招新海报或报名入口。"
+          title="六大方向招募"
+          description="实验室目前招募六大方向的同学，涵盖前端、后端、移动端、AI、Python等技术栈。"
         />
       </ScrollReveal>
 
@@ -220,7 +220,7 @@ const faqs = [
           <SectionTitle
             eyebrow="Process"
             title="申请流程"
-            description="先用四步流程固定信息架构，真实报名表、面试安排和项目题目可以后续接入。"
+            description="实验室申请流程共四步，考核通过后即可正式加入实验室。"
             align="center"
           />
         </ScrollReveal>

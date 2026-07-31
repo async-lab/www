@@ -21,7 +21,7 @@ export default {
       fontFamily: {
         display: ["Exo", "Inter", "SF Pro Display", "Microsoft YaHei", "sans-serif"],
         sans: ["Inter", "HarmonyOS Sans", "PingFang SC", "Microsoft YaHei", "sans-serif"],
-        mono: ["Roboto Mono", "Fira Code", "JetBrains Mono", "monospace"],
+        mono: ["Exo", "Inter", "SF Pro Display", "Microsoft YaHei", "sans-serif"],
       },
       boxShadow: {
         glow: "0 16px 48px rgba(0, 102, 255, 0.14)",

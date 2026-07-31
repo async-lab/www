@@ -17,7 +17,7 @@ const hasEmail = contact.email && contact.email !== "待确认";
             class="grid h-10 w-10 place-items-center rounded-full border border-lab-border bg-white font-mono text-sm font-bold text-lab-text"
             aria-hidden="true"
           >
-            <img src="/logo/白色背景_透明.svg" alt="异步开发实验室">
+            <img src="/logo/白色背景_透明.svg" alt="异步开发实验室" class="h-10 w-10 rounded-lg border border-lab-border bg-white object-contain p-1" />
           </span>
           <div>
             <p class="font-display text-base font-semibold">异步开发实验室</p>
@@ -34,7 +34,6 @@ const hasEmail = contact.email && contact.email !== "待确认";
         <h2 class="mb-4 text-sm font-semibold">站点导航</h2>
         <div class="grid gap-2 text-sm text-lab-muted">
           <RouterLink class="transition-colors hover:text-lab-text" to="/">首页</RouterLink>
-          <RouterLink class="transition-colors hover:text-lab-text" to="/#about">关于我们</RouterLink>
           <RouterLink class="transition-colors hover:text-lab-text" to="/join">加入我们</RouterLink>
         </div>
       </div>
