@@ -150,8 +150,8 @@ const faqs = [
           description="欢迎对前端、后端、移动端、AI、Python等方向感兴趣的同学加入实验室，参与真实项目和技术研究。"
           />
           <div class="mt-9">
-            <BaseButton as="a" href="mailto:example@example.com" size="lg">
-              QQ群954192337
+            <BaseButton as="a" href="https://asyncfresh.personal.asynclab.club/" size="lg">
+              进入招新平台
             </BaseButton>
           </div>
         </ScrollReveal>
