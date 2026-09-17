@@ -5,7 +5,6 @@ import { ArrowDown, ArrowRight } from "@lucide/vue";
 import { onMounted, onUnmounted, ref } from "vue";
 
 import AnimatedLogo from "@/components/shared/AnimatedLogo.vue";
-import LogoMotionExamples from "@/components/shared/LogoMotionExamples.vue";
 import BaseButton from "@/components/ui/BaseButton.vue";
 import { getScrollSmoother, gsap } from "@/lib/gsap";
 import { useAppStore } from "@/stores/app";

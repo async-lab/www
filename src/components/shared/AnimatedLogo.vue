@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logoMarkup from "../../../motion/outputs_white/logo.svg?raw";
+import logoMarkup from "@/assets/logo.svg?raw";
 
 defineProps<{
   play?: boolean;
@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <!-- SVG comes from the audited motion artifact so its geometry and wordmark remain unchanged. -->
+  <!-- SVG 内联自 public/logo/白色背景_透明.svg，替代已缺失的 motion/outputs_white/logo.svg 产物。 -->
   <div class="animated-logo" :class="{ 'animated-logo--play': play }" v-html="logoMarkup" />
 </template>
 
